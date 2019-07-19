@@ -34,7 +34,7 @@ class AdminCommunityCommand extends commando.Command
         "• Keeping a copy of frequently used image assets within the Google doc linked in the “Helpful Links” section of #admin_handbook\n\n" +
         "• Maintaining the runeclan page for the clan.\n\n" +
         "Click here to view the clan recruitment
-         Forum." )
+         Forum.\n\n" )
         .setThumbnail("")
         .setFooter("Last updated")
         .setTimestamp();
