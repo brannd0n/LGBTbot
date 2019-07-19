@@ -17,7 +17,7 @@ class AdminEventsCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x991919)
-        .addField(":calender: __**Events Team**__ :calender:",
+        .addField(":calendar: __**Events Team**__ :calendar:",
         "Events head admins:\n\n" +
         "Events Leadership:\n\n" + 
         "• Hosting capping events.\n\n" +
