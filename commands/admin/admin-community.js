@@ -26,7 +26,7 @@ class AdminCommunityCommand extends commando.Command
         "• Recruitment (in game and on forums)\n\n" +
         "• Inviting new members to the discord and giving everyone the correct roles\n\n" +
         "• Removing inactive members\n\n" +
-        "• Make sure the discord is up to date and has all relevant and correct information.\n\n"
+        "• Make sure the discord is up to date and has all relevant and correct information.\n\n" +
         "• Should you need to make changes to discord, primarily deleting things, please confirm this with other community management admins and keep a copy/archive of things deleted. This may include emotes, channels, large chunks of text etc\n\n" +
         "• Help make announcements using the LGBoT+\n\n" +
         "• Actioning Feedback surveys when needed from the Admin/Leadership Team.\n\n" +
