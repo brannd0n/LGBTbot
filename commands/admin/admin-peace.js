@@ -22,8 +22,8 @@ class AdminPeaceCommand extends commando.Command
         "It is stated in our rules that some topics are not acceptable in our chat.\n\n" +
         "Should you witness someone behaving in a manner that you consider unacceptable or inappropriate, the first thing you should do is make sure the conversation has ended. Only when the chat has returned to normal discussion should you take a screenshot the conversation, and then post it as evidence in <#474555372338675713>.")
         .addField("\u200b", "Depending on the severity of topics, you should take it upon yourself to issue a warning to the involved parties. DO NOT be afraid to approach other admins asking for advice. We are a team and back each other fully.\n\n" +
-        "Again, we expect our admins to react without bias, or any favouritism.\n\n" +
-        "​Allowing guests leaves us vulnerable to mass spam/troll attacks, so please remember to remain vigilant and alert, and be prepared to kick & ban as fast as possible should we ever fall victim.\n\n" +
+        "Again, we expect our admins to react without bias, or any favouritism.\n\n" +)
+        .addField(“\u200b”, "​Allowing guests leaves us vulnerable to mass spam/troll attacks, so please remember to remain vigilant and alert, and be prepared to kick & ban as fast as possible should we ever fall victim.\n\n" +
         "• Announce in cc you will be setting a pin and any guests should send you a PM or check discord for the current pin.\n\n" +
         "• Inform everyone in Admin that you are applying a pin due to a troll attack.\n\n" +
         "•@everyone in #clan-announcements that the pin is active and clearly state what the current pin is.\n\n" +
