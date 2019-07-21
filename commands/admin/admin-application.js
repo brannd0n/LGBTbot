@@ -52,4 +52,4 @@ class AdminApplicationCommand extends commando.Command
     }
 }
 
-module.exports = AdminResponsibilitiesCommand;
+module.exports = AdminApplicationCommand;
