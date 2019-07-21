@@ -25,7 +25,7 @@ class AdminResponsibilitiesCommand extends commando.Command
           "• Promotions in RS3 cc\n\n" +
           "• Recruitment (in game and on forums)\n\n" +
           "• Inviting new members to the discord and giving everyone the correct roles\n\n" +
-          "• Removing inactive members\n\n" )
+          "• Removing inactive members\n\n",true )
           .addField("\u200b",
           "• Make sure the discord is up to date and has all relevant and correct information.\n\n" +
           "• Should you need to make changes to discord, primarily deleting things, please confirm this with other community management admins and keep a copy/archive of things deleted. This may include emotes, channels, large chunks of text etc\n\n" +
