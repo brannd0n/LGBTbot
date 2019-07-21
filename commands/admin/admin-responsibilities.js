@@ -44,7 +44,7 @@ class AdminResponsibilitiesCommand extends commando.Command
                 "• Encouraging other members to host events and supporting them whilst doing so.\n\n" +
                 "• If you are primarily OSRS, host suitable events for the FC community.\n\n" +
                 "• Organise and host monthly skilling competitions, share the responsibility of hosting these competitions evenly amongst the events team. (take it in turns)\n\n" +
-                "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n" true)
+                "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n",true)
         .addField("If you find yourself in a situation where you are unsure about what you should do, look for a #headadmin for assistance, they are here to directly assist you, they are experienced that they know how to deal with any issue that comes forward, only under extreme circumstances do leadership need to get involved. (that doesn’t mean you should be afraid to ask leadership for help if no headadmins are online)\n\n" +
         "If you can not keep your word or find yourself in a situation in which you can not fulfill these, please speak to a member of leadership and come to an agreement with them on how to proceed with your admin role.\n\n"")
         .addField(" **Honorary rank** ", 
