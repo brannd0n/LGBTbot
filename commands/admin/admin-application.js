@@ -1,4 +1,4 @@
-sdddddddddddconst commando = require('discord.js-commando');
+const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
 class AdminApplicationCommand extends commando.Command
