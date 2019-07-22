@@ -16,9 +16,9 @@ class StructureCommand extends commando.Command
     async run(message, args)
     {
 
-        message.channel.send({
-  files: ['https://i.ibb.co/0fQQvHd/Screenshot-54-1.png']
-})
+        
+        let info = new discord.RichEmbed().setTitle("Administration Structure").setImage('https://i.ibb.co/0fQQvHd/Screenshot-54-1.png')
+        message.channel.send(info)
     }
 }
 
