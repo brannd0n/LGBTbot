@@ -57,4 +57,4 @@ class HeadAdminInterviewCommand extends commando.Command
     }
 }
 
-module.exports = AdminResponsibilitiesCommand;
+module.exports = HeadAdminInterviewCommand;
