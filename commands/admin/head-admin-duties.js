@@ -25,7 +25,7 @@ class HeadAdminDutiesCommand extends commando.Command
         "To the best of your ability try and learn about past conflicts if you can, see the warning list and the ban list and attempt to learn as much of it as you can so you have better knowledge for dealing with potential issues in the future.\n\n")
         .addField("**Head Admin Definition**",
         "Being a Head Admin means you have demonstrated leadership skills and with this we want you to utilize these skills to also support and guide the rest of the admins.  We understand that when an Admin first joins the team it can be a very daunting experience and an overload of information, it takes them time to get used to everything. Your role is to support all of the admin team specifically focusing on whichever team you are a part of, you are to ensure they are always feeling comfortable and confident in what they are doing, providing advice & guidance where needed.\n\n" +
-        "You are the stepping stone between leadership, the admins should feel like they can approach you with any issue, and leadership should only involved in issues that are substantially more complicated than usual.\n\n" + )
+        "You are the stepping stone between leadership, the admins should feel like they can approach you with any issue, and leadership should only involved in issues that are substantially more complicated than usual.\n\n" +
         "Based on what team you have experience in this will be the team you find yourself managing.\n\n")
         .addField("\u200b",
         "Where to go from here?\n\n" +
