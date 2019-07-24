@@ -18,11 +18,11 @@ class StaffRolesCommand extends commando.Command
         var myInfo = new discord.RichEmbed()
         .setColor(0x991919)
         .addField(" **Role Definition** ",
-        "\n"
+        
         "Each team will be lead by a member of leadership who will organise and manage the activities within that team ensuring the responsibilities are being completed.")
         .addBlankField()
         .addField(" **Events Team** ",
-          "\n"
+          
           "• Hosting capping events.\n\n" +
           "• Maintaining events calendar.\n\n" +
           "• Hosting 2 events (per person) per month such as: Hayley’s clue events, spotlight events bossing events, skilling events.\n\n" +
@@ -32,7 +32,7 @@ class StaffRolesCommand extends commando.Command
           "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n" ,true )
         .addBlankField()
         .addField(" **Community Management** ",
-                "\n"
+                
                 "• Forum bumping both OSRS and RS3 \n\n" +
                 "• Management of the OSFC (guest minimum)\n\n" +
                 "• Promotions in RS3 cc \n\n" +
