@@ -23,7 +23,8 @@ class CommunityAdminApplicationCommand extends commando.Command
         "3. What timezone are you in? \n\n" +
         "4. Do you play RS3 or OSRS?\n\n" +
         "5. How long have you been playing runescape for and what’s your proudest achievement in game?\n\n" +
-        "6. What things do you enjoy doing in your day-to-day life? Any hobbies or interests?\n\n" +
+        "6. What things do you enjoy doing in your day-to-day life? Any hobbies or interests?\n\n")
+        .addField("\u200b",
         "7. What has made you want to apply for an admin position and what do you think you’d bring to enhance the team and community further?\n\n" +
         "8. As we are an LGBT+ community based clan, we often host events which are significant within the LGBT+ community, can you let us know which event is your favorite and why?\n\n" +
         "9. As part of this role you will need to be competent with the Google applications (Docs, Sheets & Forms), what experience do you have with these tools? Do you have expertise with any of these e.g. vlookups, conditional formatting, pivot tables?\n\n")
