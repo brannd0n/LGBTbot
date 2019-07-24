@@ -22,7 +22,7 @@ class StaffRolesCommand extends commando.Command
         "Each team will be lead by a member of leadership who will organise and manage the activities within that team ensuring the responsibilities are being completed.")
         .addBlankField()
         .addField(" **Events Team** ",
-          
+          "\n\n"+
           "• Hosting capping events.\n\n" +
           "• Maintaining events calendar.\n\n" +
           "• Hosting 2 events (per person) per month such as: Hayley’s clue events, spotlight events bossing events, skilling events.\n\n" +
