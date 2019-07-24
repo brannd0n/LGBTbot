@@ -21,15 +21,17 @@ class StaffRolesCommand extends commando.Command
         
         "Each team will be lead by a member of leadership who will organise and manage the activities within that team ensuring the responsibilities are being completed.")
         .addBlankField()
-        .addField(" **Events Team**\n\n ",
-          "\n\n"+
+        .addField(" **Events Team** ","\u200b")
+          .addBlankField()
+          
+          .addField("\u200b",
           "• Hosting capping events.\n\n" +
           "• Maintaining events calendar.\n\n" +
           "• Hosting 2 events (per person) per month such as: Hayley’s clue events, spotlight events bossing events, skilling events.\n\n" +
           "• Encouraging other members to host events and supporting them whilst doing so.\n\n" +
           "• If you are primarily OSRS, host suitable events for the FC community.\n\n" +
           "• Organise and host monthly skilling competitions, share the responsibility of hosting these competitions evenly amongst the events team. (take it in turns)\n\n" +
-          "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n" ,true )
+          "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n")
         .addBlankField()
         .addField(" **Community Management** ",
                 
