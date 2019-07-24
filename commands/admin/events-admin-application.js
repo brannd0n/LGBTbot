@@ -17,7 +17,7 @@ class EventsAdminApplicationCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x991919)
-        .addField("***Events Admin Application***",
+        .addField("__**Events Admin Application**__",
                 "1. What is your RSN?\n\n" +
                 "2. What is your current rank in the clan?\n\n" +
                 "3. What timezone are you in? \n\n" +
