@@ -31,7 +31,8 @@ class CommunityAdminApplicationCommand extends commando.Command
         .addField("\u200b",
         "10. You will need to be an ambassador for the clan and on-boarding new recruits to the clan, effectively the welcoming face of the clan. Is there any parts you’re not 100% on within the LGBT+ community and would like support from the admin team if you were successful? E.g. Pronouns, intersexuality etc.\n\n" +
         "11. With the community management team we have a large focus around elements of the clan chat, discord and the official forums. What ideas or suggestions would you like to bring in to make improvements from your perspective? \n\n" +
-        "12. We have our friendly LGBoT+ in the discord which helps us with making posts in the discord, do you have any experience with coding? If not would you be willing to learn? \n\n" +
+        "12. We have our friendly LGBoT+ in the discord which helps us with making posts in the discord, do you have any experience with coding? If not would you be willing to learn? \n\n")
+        .addField("\u200b",
         "13. Social Media is one of our methods for interacting and attracting members into the clan, often using specially created imagery to be more effective. What expertise do you have with both/either social media / photo editing or graphic design? \n\n" +
         "14. Discord is a large part of our clan communication and planning, what experience do you have in managing a discord server? For example, managing and creating roles, rooms, locked rooms, … \n\n")
 
