@@ -17,8 +17,7 @@ class StaffRolesCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x991919)
-        .addField(" **Role Definition** ",
-        "" +
+        .addField(" **Role Definition** "
         "Each team will be lead by a member of leadership who will organise and manage the activities within that team ensuring the responsibilities are being completed.")
         .addBlankField()
         .addField(" **Events Team** ",
