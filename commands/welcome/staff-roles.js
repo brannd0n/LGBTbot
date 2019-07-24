@@ -21,7 +21,7 @@ class StaffRolesCommand extends commando.Command
         
         "Each team will be lead by a member of leadership who will organise and manage the activities within that team ensuring the responsibilities are being completed.")
         .addBlankField()
-        .addField(" **Events Team** "
+        .addField(" **Events Team** ",
           
           
           
