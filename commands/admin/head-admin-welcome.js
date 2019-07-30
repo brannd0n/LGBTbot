@@ -20,7 +20,7 @@ class HeadAdminWelcomeCommand extends commando.Command
         .addField("📋 __**Head Admin Handbook**__ 📋", "First of all congratulations on becoming a head admin. To have achieved this rank it means you have gone above and beyond what we expect of regular admins and have shown potential for leadership.\n\n" +
         "By accepting this rank, however, it does mean we expect more from you than the rest of the admin team.\n\n" +
         "This handbook is here to help you and explain your added responsibilities.")
-        .addField("**Head Admin Definition**",
+        .addField("__**Head Admin Definition**__",
         "Being a Head Admin means you have demonstrated leadership skills and with this we want you to utilize these skills to also support and guide the rest of the admins.  We understand that when an Admin first joins the team it can be a very daunting experience and an overload of information, it takes them time to get used to everything. Your role is to support all of the admin team specifically focusing on whichever team you are a part of, you are to ensure they are always feeling comfortable and confident in what they are doing, providing advice & guidance where needed.\n\n" +
         "You are the stepping stone between leadership, the admins should feel like they can approach you with any issue, and leadership should only involved in issues that are substantially more complicated than usual.\n\n" +
         "Based on what team you have experience in this will be the team you find yourself managing.\n\n")
