@@ -26,10 +26,10 @@ class AdminPeaceCommand extends commando.Command
         .addField("\u200b", "Allowing guests leaves us vulnerable to mass spam/troll attacks, so please remember to remain vigilant and alert, and be prepared to kick & ban as fast as possible should we ever fall victim.\n\n" +"With the introduction of the clan pin system should a spam attack occur do not be afraid to set a pin, if you do, make sure you take the following steps:\n\n"+
         " • Announce in cc you will be setting a pin and any guests should send you a PM or check discord for the current pin.\n\n" +
         " • Inform everyone in Admin that you are applying a pin due to a troll attack.\n\n"+
-        " • @everyone in #clan-announcements that the pin is active and clearly state what the current pin is.\n\n")
+        " • @everyone in <#308711801166626816> that the pin is active and clearly state what the current pin is.\n\n")
 	 	.addField("\u200b"," • Provide evidence in #admin showing why the pin was activated.\n\n" +
         "Be prepared to request back-up from <#261530348310102019> if you ever feel overwhelmed in any situation.\n\n" +
-        "To help you communicate with each other better you will be assigned specific roles in the discord to show which team you are a part of, you will all be able to tag each other with either @EventsTeam or @CommunityManagement, you will also have access to not only the general #admin channel but #Communityadmin and #Eventsadmin channels, these specific channels are to help you stay more organised and are not for chit chat.")
+        "To help you communicate with each other better you will be assigned specific roles in the discord to show which team you are a part of, you will all be able to tag each other with either <@601390315894603816> or <@601391497698344960>, you will also have access to not only the general #admin channel but #Communityadmin and #Eventsadmin channels, these specific channels are to help you stay more organised and are not for chit chat.")
         .setThumbnail("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/138/peace-symbol_262e.png")
         .setFooter("Last updated")
         .setTimestamp();
