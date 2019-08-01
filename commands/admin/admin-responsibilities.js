@@ -40,10 +40,10 @@ class AdminResponsibilitiesCommand extends commando.Command
           "• Help make announcements using the LGBoT+\n\n" +
           "• Actioning Feedback surveys when needed from the Admin/Leadership Team.\n\n" +
           "• Managing the social media accounts (Twitter/Instagram etc) in publishing posts and managing account security (e.g. update login details when admins leave/ensure only the relevant people have the login details).\n\n" +
-          "• Keeping a copy of frequently used image assets within the Google doc linked in the “Helpful Links” section of #admin_handbook\n\n" +
+          "• Keeping a copy of frequently used image assets within the Google doc linked in the “Helpful Links” section of <#329746742847340554>\n\n" +
           "• Maintaining the runeclan page for the clan.\n\n" +
         "[Click here to view the clan recruitment forum](http://services.runescape.com/m=forum/c=w9VNiocRUOQ/sl=0/forums.ws?94,95)", true)
-        .addField("\u200b","If you find yourself in a situation where you are unsure about what you should do, look for a #headadmin for assistance, they are here to directly assist you, they are experienced that they know how to deal with any issue that comes forward, only under extreme circumstances do leadership need to get involved. (that doesn’t mean you should be afraid to ask leadership for help if no headadmins are online)\n\n" +
+        .addField("\u200b","If you find yourself in a situation where you are unsure about what you should do, look for a <@448922576400678924> for assistance, they are here to directly assist you, they are experienced that they know how to deal with any issue that comes forward, only under extreme circumstances do leadership need to get involved. (that doesn’t mean you should be afraid to ask leadership for help if no headadmins are online)\n\n" +
         "If you can not keep your word or find yourself in a situation in which you can not fulfill these, please speak to a member of leadership and come to an agreement with them on how to proceed with your admin role.\n\n")
         .addField(" **Honorary rank** ",
         "For those of you who have helped shape our clan into the beauty that it is today, we've created a special honorary rank on our discord and in-game. If you were an admin for longer than 6 months and for whatever reason decided to step down, or found yourself to be in a situation where you were not active enough to fulfill proper admin duties, this rank will be offered to you.\n\n" +
