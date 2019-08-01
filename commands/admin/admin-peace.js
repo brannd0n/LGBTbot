@@ -29,7 +29,7 @@ class AdminPeaceCommand extends commando.Command
         " • @everyone in <#308711801166626816> that the pin is active and clearly state what the current pin is.\n\n")
 	 	.addField("\u200b"," • Provide evidence in #admin showing why the pin was activated.\n\n" +
         "Be prepared to request back-up from <#261530348310102019> if you ever feel overwhelmed in any situation.\n\n" +
-        "To help you communicate with each other better you will be assigned specific roles in the discord to show which team you are a part of, you will all be able to tag each other with either <@601390315894603816> or <@601391497698344960>, you will also have access to not only the general #admin channel but #Communityadmin and #Eventsadmin channels, these specific channels are to help you stay more organised and are not for chit chat.")
+        "To help you communicate with each other better you will be assigned specific roles in the discord to show which team you are a part of, you will all be able to tag each other with either <@606093358288470016> or <@606093141241757744>, you will also have access to not only the general #admin channel but #Communityadmin and #Eventsadmin channels, these specific channels are to help you stay more organised and are not for chit chat.")
         .setThumbnail("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/138/peace-symbol_262e.png")
         .setFooter("Last updated")
         .setTimestamp();
