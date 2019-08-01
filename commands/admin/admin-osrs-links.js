@@ -27,4 +27,4 @@ class OsrsLinksCommand extends commando.Command
     }
 }
 
-module.exports = AdminLinksCommand;
+module.exports = OsrsLinksCommand;
