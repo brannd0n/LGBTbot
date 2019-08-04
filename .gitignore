@@ -1,0 +1,10 @@
+# gitignore
+
+# vim swap files
+*.swp
+*.swo
+.*.swp
+.*.swo
+
+# visual studio
+.vs/
