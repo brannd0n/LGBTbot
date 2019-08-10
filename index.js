@@ -12,19 +12,21 @@ bot.registry
     .registerGroup('fun', 'Fun')
     .registerGroup('events', 'Events')
     .registerGroup('room', 'Rooms')
+    .registerGroup('autoresponses', 'AutoResponses')
     .registerGroup('admin', 'Admin')
     .registerDefaults()
     .registerCommandsIn(__dirname + '/commands')
+    ;
 
 bot.on('ready', function () {
     console.log("Ready");
-})
+});
 
 
 
 
 
-bot.login(TOKEN)
+bot.login(TOKEN);
 
 http.createServer((req, res) => {
     res.writeHead(200, {
