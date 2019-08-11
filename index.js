@@ -23,7 +23,17 @@ bot.on('ready', function () {
 });
 
 
-
+bot.on("message", function(message) {
+    if (message.author.bot) {
+        return;
+    }
+ 
+    if (message.content.includes("runescape.fandom.com") || message.content.includes("runescape.wikia.com")) {
+        var responseString = "Hey " + message.author + "! That's the old RuneScape Wiki! It's gross and out of date.";
+        responseString += " Check out the new RuneScape Wiki at https://runescape.wiki/!";
+        message.channel.send(responseString);
+    }
+});
 
 
 bot.login(TOKEN);
