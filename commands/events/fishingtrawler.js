@@ -10,7 +10,7 @@ class FishingtrawlerCommand extends commando.Command
             group: 'events',
             memberName: 'fishingtrawler',
             description: 'fishing trawler event details',
-            examples: ['./fishingtrawler "28 September" "20:00" "Describe where to meet and a basic premise here"'],
+            examples: ['./fishingtrawler "28 September" "20:00"'],
             args: [
                 {
                     key: 'date',
@@ -33,7 +33,7 @@ class FishingtrawlerCommand extends commando.Command
         .setTitle(":fish: __**Fishing Trawler Event**__ :fish:")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! We will work together to keep a trawler afloat while keeping nets fixed in order to catch as many fish as possible.", "https://vignette.wikia.nocookie.net/runescape2/images/1/14/Mg_fishingtrawler.jpg/revision/latest?cb=20080728145136")
-        .setThumbnail("https://vignette.wikia.nocookie.net/runescape2/images/1/14/Mg_fishingtrawler.jpg/revision/latest?cb=20080728145136")
+        .setThumbnail("https://runescape.wiki/images/thumb/b/b2/Raw_manta_ray_detail.png/237px-Raw_manta_ray_detail.png?668eb")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
       message.channel.send(myInfo);
     }

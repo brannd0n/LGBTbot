@@ -14,7 +14,7 @@ class RiddleCommand extends commando.Command
             args: [
                 {
                     key: 'date',
-                    prompt: 'What date is the capping event? (e.g. 28 September)',
+                    prompt: 'What date is the event? (e.g. 28 September)',
                     type: 'string'
                 },
                 {

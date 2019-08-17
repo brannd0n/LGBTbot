@@ -33,7 +33,7 @@ class CastlewarsCommand extends commando.Command
         .setTitle("🏰 __**Castle Wars Event**__ 🏰")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! We will have a friendly game of Capture the Flag in which two teams try to bring the opponent's flag back to their base.", "https://vignette.wikia.nocookie.net/runescape2/images/4/49/Castle_Wars_icon.jpg/revision/latest?cb=20080728140445")
-        .setThumbnail("https://vignette.wikia.nocookie.net/runescape2/images/4/49/Castle_Wars_icon.jpg/revision/latest?cb=20080728140445")
+        .setThumbnail("https://runescape.wiki/images/4/49/Castle_Wars_icon.jpg")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
       message.channel.send(myInfo);
     }

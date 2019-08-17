@@ -14,7 +14,7 @@ class HeistCommand extends commando.Command
             args: [
                 {
                     key: 'date',
-                    prompt: 'What date is the capping event? (e.g. 28 September)',
+                    prompt: 'What date is the event? (e.g. 28 September)',
                     type: 'string'
                 },
                 {
@@ -33,7 +33,7 @@ class HeistCommand extends commando.Command
         .setTitle(":spy:  __**Heist Event**__ :spy: ")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This minigame involves a team of robbers try to secure loot undetected while another team of guards attempt to uncover and arrest the robbers before time runs out.", "https://vignette.wikia.nocookie.net/runescape2/images/d/df/Reward_points.png/revision/latest?cb=20170130174417")
-        .setThumbnail("https://vignette.wikia.nocookie.net/runescape2/images/d/df/Reward_points.png/revision/latest?cb=20170130174417")
+        .setThumbnail("https://runescape.wiki/images/d/df/Reward_points.png")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
       message.channel.send(myInfo);
     }

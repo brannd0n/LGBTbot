@@ -33,7 +33,7 @@ class CabbagefacepunchCommand extends commando.Command
         .setTitle(":gorilla:  __**Cabbage Facepunch Bonanza Event**__ :gorilla: ")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This minigame involves a maze where players have to survive as long as possible, running between two safe zones. Any player who fails is turned into a gorilla.", "https://vignette.wikia.nocookie.net/runescape2/images/8/82/Cabbage_Facepunch_Bonanza_icon.png/revision/latest?cb=20170322194600")
-        .setThumbnail("https://vignette.wikia.nocookie.net/runescape2/images/8/82/Cabbage_Facepunch_Bonanza_icon.png/revision/latest?cb=20170322194600")
+        .setThumbnail("https://runescape.wiki/images/8/82/Cabbage_Facepunch_Bonanza_icon.png")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
         message.channel.send(myInfo);
     }
