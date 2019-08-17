@@ -12,7 +12,6 @@ bot.registry
     .registerGroup('fun', 'Fun')
     .registerGroup('events', 'Events')
     .registerGroup('room', 'Rooms')
-    .registerGroup('autoresponses', 'AutoResponses')
     .registerGroup('admin', 'Admin')
     .registerDefaults()
     .registerCommandsIn(__dirname + '/commands')
@@ -22,12 +21,15 @@ bot.on('ready', function () {
     console.log("Ready");
 });
 
-
-bot.on("message", function(message) {
+// respond to messages
+bot.on("message", function (message) {
+    // don't run if the message was sent by a bot
     if (message.author.bot) {
         return;
     }
- 
+
+    // if the message includes a reference to the old RS Wikia site hosted by Fandom, let the
+    // author know the Official RS Wiki is hosted elsewhere now.
     if (message.content.includes("runescape.fandom.com") || message.content.includes("runescape.wikia.com")) {
         var responseString = "Hey " + message.author + "! That's the old RuneScape Wiki! It's gross and out of date.";
         responseString += " Check out the new RuneScape Wiki at https://runescape.wiki/";
