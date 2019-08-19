@@ -29,13 +29,13 @@ class Ed3Command extends commando.Command
     {
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle("⚔️ __**Shadow Reef Event**__ ⚔️")
+        .setTitle("⚔️__**Shadow Reef Event**__⚔️")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Please feel free to PM me. All loot will be traded to me and split equally between attendees.", "https://runescape.wiki/images/7/7e/The_Ambassador.png?efb9b")
         .setThumbnail("https://runescape.wiki/images/7/7e/The_Ambassador.png?efb9b")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for The Shadow Reef](https://runescape.wiki/w/The_Shadow_Reef/Strategies)")
-        .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \n Sara brew flasks \nSalve amulet (e) \nEnhanced Excalibur and any mainhand Melee weapon for Bladed Dive", true)
+        .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \nSara brew flasks \nSalve amulet (e) \nEnhanced Excalibur and any mainhand Melee weapon for Bladed Dive", true)
         message.channel.sendEmbed(myInfo);
     }
 }
