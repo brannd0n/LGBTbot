@@ -19,10 +19,10 @@ class AdminLinksCommand extends commando.Command
         .setColor(0x991919)
         .addField("🔗 __**HELPFUL LINKS**__ 🔗",
         "[Click here to visit the forum thread](http://services.runescape.com/m=forum/c=w9VNiocRUOQ/sl=0/forums.ws?290,291,31,66034838)\n\n"+
-        "[Click here to visit the recruitment forum](http://services.runescape.com/m=forum/c=mceHK8S1nWA/sl=0/forums.ws?94,95,thd,352,66115523)\n\n"+
+        "[Click here to visit the recruitment forum](http://services.runescape.com/m=forum/c=mceHK8S1nWA/sl=0/forums.ws?94,95,goto,1)\n\n"+
         "[Click here to view the warning spreadsheet](https://docs.google.com/spreadsheets/d/19y9dEi98kO0loHWhzZpe0a-fPSa1CXZ8b4p_PYC7L7g)\n\n"+
         "[Click here for clan calendar](https://calendar.google.com/calendar/b/1?cid=dWFxNm5wcTByc2s0bmsyNHQ0ZzF2bTFtYzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)\n\n"+
-        "[Click here for promotions spreadsheet](https://docs.google.com/spreadsheets/d/1UWg0trdQQJ2vSdQct9-30gTsIvO_3vLKcavD_G_QLyc/edit#gid=27995968)\n\n"+
+        "[Click here for promotions spreadsheet](https://docs.google.com/spreadsheets/d/1zPtnid4-boHb04PXO8QNaohRkMQGaMp2Gs5w8_pgNHA/edit?usp=sharing)\n\n"+
         "[Click here for clan twitter](https://twitter.com/TheLGBTCorner)\n\n"+
         "[Click here for clan facebook](https://www.facebook.com/LGBTCornerClan/)\n\n"+
         "[Click here for image resources](https://drive.google.com/drive/folders/1DcAYqV-PNgKpVonMWEsV4SpnFvjRDeJw)\n\n")
