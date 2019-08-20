@@ -35,7 +35,7 @@ class Ed1Command extends commando.Command
         .setThumbnail("https://runescape.wiki/images/e/ea/Seiryu_the_Azure_Serpent.png?932ac")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Temple of Aminishi](https://runescape.wiki/w/Temple_of_Aminishi/Strategies)")
-        .addField("\u200b", "**Requirements:**\nAt least Tier 80+ combat stats \nTier 80+ armour & weapons \nDevotion", true)
+        .addField("\u200b", "**Requirements:**\nQuest: Impressing The Locals\nAt least Tier 80+ combat stats \nTier 80+ armour & weapons \nDevotion", true)
         .addField("\u200b", "**Recommended:**\nPrayer renewal \nOverloads \nSuper restore flasks \nRange or Magic Style", true)
         message.channel.sendEmbed(myInfo);
     }
