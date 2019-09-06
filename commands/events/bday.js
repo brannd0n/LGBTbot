@@ -10,7 +10,7 @@ class BdayCommand extends commando.Command
             group: 'events',
             memberName: 'bday',
             description: 'Clan birthday event details',
-            examples: ['./bday "28 September" "Runescape Gods" "For this weeks capping event, we ask you to wear the colours, outfits, or gear of any of your favourite runescape Gods! We can\'t wait to see what outfits & the variety of stuff you will all wear!"'],
+            examples: ['./bday "28 September" "Runescape Gods" "For this event, we ask you to wear the colours, outfits, or gear of any of your favourite runescape Gods! We can\'t wait to see what outfits & the variety of stuff you will all wear!"'],
             args: [
                 {
                     key: 'date',
