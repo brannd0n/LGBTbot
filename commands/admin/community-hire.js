@@ -17,7 +17,7 @@ class CommunityHiringCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x00FDFF)
-        .addField("__**Status:**__", ":pencil: We are currently recruiting for the Community management team :pencil:")
+        .addField("__**Status:**__", ":pencil: We are currently recruiting for the community management team :pencil:")
         .setFooter("Last updated")
         .setTimestamp();
         message.channel.sendEmbed(myInfo);
