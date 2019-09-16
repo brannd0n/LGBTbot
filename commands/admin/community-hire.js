@@ -6,9 +6,9 @@ class CommunityHiringCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'communityt-hire',
+            name: 'community-hire',
             group: 'admin',
-            memberName: 'communityt-hire',
+            memberName: 'community-hire',
             description: 'Looking for community management team members'
         });
     }
