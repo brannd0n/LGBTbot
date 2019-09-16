@@ -17,7 +17,7 @@ class EventHiringCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0xFD00FF)
-        .addField("__**Status**__", ":calendar: We are currently recruiting for the events team :calendar:")
+        .addField("__**Status:**__", ":calendar: We are currently recruiting for the events team :calendar:")
         .setFooter("Last updated")
         .setTimestamp();
         message.channel.sendEmbed(myInfo);
