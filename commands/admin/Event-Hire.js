@@ -6,9 +6,9 @@ class EventHiringCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'Event-Hire',
+            name: 'event-hire',
             group: 'admin',
-            memberName: 'Event-Hire',
+            memberName: 'event-hire',
             description: 'Looking for events team members'
         });
     }
