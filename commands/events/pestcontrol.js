@@ -21,7 +21,12 @@ class PestcontrolCommand extends commando.Command
                     key:'time',
                     prompt: 'What time is the event at? (In game time)',
                     type: 'string'
-                },
+               ,
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
+                }
             ]
         });
     }
