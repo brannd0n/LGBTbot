@@ -40,7 +40,7 @@ class PestcontrolCommand extends commando.Command
         .setFooter("Please remember that this is completely for fun! This is a team combat minigame which involves protecting a vulnerable Void Knight, while fending off against waves of incoming monsters and taking down four portals.", "https://vignette.wikia.nocookie.net/runescape2/images/0/0b/Pest_Control_icon.jpg/revision/latest?cb=20080728141300")
         .setThumbnail("https://runescape.wiki/images/thumb/a/a4/Void_knight_top_detail.png/259px-Void_knight_top_detail.png?b0939")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
-        .addField("\u200b", "**Requirements:**\nAtleast a combat level of 35.", true)
+        .addField("\u200b", "**Requirements:**\nAtleast a combat level of 35.")
         .addField("\u200b", args.description, true);
         message.channel.send(myInfo);
     }
