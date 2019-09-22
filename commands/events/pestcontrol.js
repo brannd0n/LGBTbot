@@ -41,6 +41,7 @@ class PestcontrolCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/thumb/a/a4/Void_knight_top_detail.png/259px-Void_knight_top_detail.png?b0939")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
         .addField("\u200b", "**Requirements:**\nAtleast a combat level of 35.", true)
+        .addField("\u200b", args.description, true);
         message.channel.send(myInfo);
     }
 }
