@@ -20,11 +20,15 @@ class AodCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
+                },
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
                 }
             ]
         });
     }
-
     async run(message, args)
     {
         message.delete();
@@ -37,6 +41,7 @@ class AodCommand extends commando.Command
         .addField("\u200b", "[Hard mode strategies for Angel of Death](https://runescape.wiki/w/Nex:_Angel_of_Death/Strategies)")
         .addField("\u200b", "**Requirements:**\nFreedom \nAtleast Tier 80 Weapons and Armour \nAntipoision ++ \nMagic or Range Style \nOverloads \nBeast of Burden \nAtleast 71 Prayer", true)
         .addField("\u200b", "**Recommended:**\nVenomblood Perk \nDouble Surge/Escape \nTier 95 Prayers \nVulnerability \nWeapon Poison++ \nManiacal/Reckless Aura \nSign of Life", true)
+        .addField("\u200b", args.description, true);
         message.channel.sendEmbed(myInfo);
     }
 }
