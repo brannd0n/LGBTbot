@@ -20,7 +20,7 @@ class DivWelcome2Command extends commando.Command
         " Examples of this are suggestions for more NPCs in game which represent how you identify, raising accessibility issues or bringing situations to our attention which you found alienating or hurtful." +
         " We cannot guarantee that all suggestions will make it to the game, but we aim to implement them where possible or find compromises." +
         " We want to enable open conversations and create better mutual understanding between JMods and players.\n\n")
-        .addField("\u200b", "This server has been endorsed by RuneScape community management and JMods within the discord can clearly be identified by the “JMod” role. Please be aware to not excessively tag as their involvement is in their own personal time.")
+        .addField("\u200b", "This server has been endorsed by RuneScape community management and JMods within the discord can clearly be identified by the <@&630756191596838942> role. Please be aware to not excessively tag as their involvement is in their own personal time.")
         .setColor(0xE2BDFF)
         .setFooter("Last updated")
         .setTimestamp();
