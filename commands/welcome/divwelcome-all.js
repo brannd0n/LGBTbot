@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
-const DivWelcomeCommand = require('./welcome.js');
-const DivWelcome2Command = require('./rules.js');
+const DivWelcomeCommand = require('./DivWelcome.js');
+const DivWelcome2Command = require('./divwelcome2.js');
 var divwelcome, divwelcome2;
 
 class DivWelcomeAllCommand extends commando.Command
