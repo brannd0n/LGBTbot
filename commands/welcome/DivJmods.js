@@ -17,7 +17,7 @@ class DivJmodsCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x00FFFF)
-        .addField("__Diversity within Jagex__", "Diversity at Jagex is very broad and includes Jmods from varying departments, **although not everyone from the teams will be in this discord,** here is a list of some of the teams that are a part of the diversity group.\n\n" +
+        .addField("__Diversity within Jagex__", "Diversity at Jagex is very broad and includes Jmods from varying departments, __**although not everyone from the teams will be in this discord,**__ here is a list of some of the teams that are a part of the diversity group.\n\n" +
         "Analytics & Data Science\n" +
         "Audio\n" +
         "Communications\n" +
