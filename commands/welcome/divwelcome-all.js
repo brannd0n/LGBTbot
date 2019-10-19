@@ -8,9 +8,9 @@ class DivWelcomeAllCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'welcome-all',
+            name: 'divwelcome-all',
             group: 'welcome',
-            memberName: 'welcome-all',
+            memberName: 'divwelcome-all',
             description: 'Does all welcome messages'
         });
         divwelcome = new DivWelcomeCommand(client);
