@@ -16,7 +16,7 @@ class DivWelcome2Command extends commando.Command
     async run(message, args)
     {
         var myInfo = new discord.RichEmbed()
-        .addField("\u200b", "The aim of the discord is to create a safe space for players to talk about aspects of the game & community which could be improved to make people feel more included." +
+        .addField("__Server's Purpose__", "The aim of the discord is to create a safe space for players to talk about aspects of the game & community which could be improved to make people feel more included." +
         " Examples of this are suggestions for more NPCs in game which represent how you identify, raising accessibility issues or bringing situations to our attention which you found alienating or hurtful." +
         " We cannot guarantee that all suggestions will make it to the game, but we aim to implement them where possible or find compromises." +
         " We want to enable open conversations and create better mutual understanding between JMods and players.\n\n")
