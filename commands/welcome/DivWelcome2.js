@@ -6,9 +6,9 @@ class DivWelcome2Command extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'divwelcome',
+            name: 'divwelcome2',
             group: 'welcome',
-            memberName: 'divwelcome',
+            memberName: 'divwelcome2',
             description: 'Welcome info.'
         });
     }
