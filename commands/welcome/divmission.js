@@ -18,7 +18,7 @@ class DivMissionCommand extends commando.Command
         var myInfo = new discord.RichEmbed()
         .setColor(0xFF00D6)
         .setTimestamp()
-        .addField(" __About Us__", "The purpose of Diversity at Jagex is to promote inclusivity and equal opportunities within the company and without. It functions as a support network, a framework to create positive change, and a place for allies to show their support.\n\n" +
+        .addField(" __Our Mission Statement__", "The purpose of Diversity at Jagex is to promote inclusivity and equal opportunities within the company and without. It functions as a support network, a framework to create positive change, and a place for allies to show their support.\n\n" +
         "Our remit is to ensure that no one is erased, disadvantaged or discriminated against. Anyone who values the principles of tolerance, fairness and openness is welcome!\n\n" ,true)
         .addBlankField()
         .addField(" __Our Goals__", "**•** To inspire people from underrepresented groups to apply to Jagex by making ourselves visible at conferences and events, providing mentorship, and developing an inclusive approach to hiring and graduate schemes. \n\n**•** To raise awareness of the benefits of inclusivity in our games by organising educational events and reaching out to allies. \n\n**•** To support our diverse community of players by creating safe spaces for communication, increasing diverse representation within our game and sponsoring relevant events.\n\n", true)
