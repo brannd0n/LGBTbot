@@ -17,10 +17,10 @@ class DivRolesCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .addField("__Roles__", "While in this server everyone has the ability to self assign pronouns, you will be able to do this as soon as you join the server, we request everyone respects each other’s pronouns and hope you take full advantage of this ability.\n\n" +
-        "To assign yourself pronouns use the following command/commands in <#630747807577538570>\n\n" +
-        "`!They` - <@&630739941579816967>\n" +
-        "`!She` - <@&630740361337372692>\n" +
-        "`!He` - <@&630740555143315463>")
+        "To assign yourself pronouns please react to this post with any of the corresponding emojis.\n\n" +
+        ":purple_heart: - <@&630739941579816967>\n" +
+        ":green_heart: - <@&630740361337372692>\n" +
+        ":yellow_heart: - <@&630740555143315463>")
         .setColor(0x00FFFF)
         .setFooter("Last updated")
         .setTimestamp();
