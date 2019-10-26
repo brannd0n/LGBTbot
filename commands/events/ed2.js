@@ -20,10 +20,15 @@ class Ed2Command extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
 
     async run(message, args)
     {
@@ -37,6 +42,7 @@ class Ed2Command extends commando.Command
         .addField("\u200b", "[Strategies for Dragonkin Laboratory](https://runescape.wiki/w/Dragonkin_Laboratory/Strategies)")
         .addField("\u200b", "**Requirements:**\nAt least Tier 70 weapon and armour \nSuper Antifires or Reg Antifires \nBeast of Burden \nAt least 43 Prayer", true)
         .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \n Supreme Overload Salves \nMobile Perk \nRing of Death", true)
+        .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
