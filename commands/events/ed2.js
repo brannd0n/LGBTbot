@@ -1,15 +1,15 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class Ed2Command extends commando.Command
+class Ed3Command extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'ed2',
+            name: 'ed3',
             group: 'events',
-            memberName: 'ed2',
-            description: 'Elite dungeon 2 event details',
+            memberName: 'ed3',
+            description: 'Elite dungeon 3 event details',
             args: [
                 {
                     key: 'date',
@@ -34,17 +34,16 @@ class Ed2Command extends commando.Command
     {
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle("⚔️ __**Dragonkin Laboratory Event**__ ⚔️")
+        .setTitle("⚔️__**Shadow Reef Event**__⚔️")
         .setColor(0x00AE86)
-        .setFooter("Please remember that this is completely for fun! Please feel free to PM me. All loot will be traded to me and split equally between attendees.", "https://runescape.wiki/images/thumb/a/a3/Black_stone_dragon.png/1200px-Black_stone_dragon.png?be0ef")
-        .setThumbnail("https://runescape.wiki/images/thumb/a/a3/Black_stone_dragon.png/1200px-Black_stone_dragon.png?be0ef")
+        .setFooter("Please remember that this is completely for fun! Please feel free to PM me. All loot will be traded to me and split equally between attendees.", "https://runescape.wiki/images/7/7e/The_Ambassador.png?efb9b")
+        .setThumbnail("https://runescape.wiki/images/7/7e/The_Ambassador.png?efb9b")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
-        .addField("\u200b", "[Strategies for Dragonkin Laboratory](https://runescape.wiki/w/Dragonkin_Laboratory/Strategies)")
-        .addField("\u200b", "**Requirements:**\nAt least Tier 70 weapon and armour \nSuper Antifires or Reg Antifires \nBeast of Burden \nAt least 43 Prayer", true)
-        .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \n Supreme Overload Salves \nMobile Perk \nRing of Death", true)
+        .addField("\u200b", "[Strategies for The Shadow Reef](https://runescape.wiki/w/The_Shadow_Reef/Strategies)")
+        .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \nSara brew flasks \nSalve amulet (e) \nEnhanced Excalibur and any mainhand Melee weapon for Bladed Dive", true)
         .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
 
-module.exports = Ed2Command;
+module.exports = Ed3Command;
