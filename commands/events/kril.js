@@ -20,10 +20,15 @@ class KrilCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
 
     async run(message, args)
     {
@@ -37,6 +42,7 @@ class KrilCommand extends commando.Command
         .addField("\u200b", "[Normal mode strategies for K'ril Tsutsaroth](https://runescape.fandom.com/wiki/K%27ril_Tsutsaroth/Strategies)")
         .addField("\u200b", "**Requirements:**\nTroll Stronghold \n70 Constutution", true)
         .addField("\u200b", "**Recommended:**\nTier 70 Armour or higher \n Overloads \n Soulsplit", true)
+        .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
