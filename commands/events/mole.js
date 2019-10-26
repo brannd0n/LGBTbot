@@ -20,10 +20,16 @@ class MoleCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
+
 
     async run(message, args)
     {
@@ -37,6 +43,7 @@ class MoleCommand extends commando.Command
         .addField("\u200b", "[Strategies for Giant mole](https://runescape.wiki/w/Giant_mole/Strategies)")
         .addField("\u200b", "**Requirements:**\nNone", true)
         .addField("\u200b", "**Recommended:**\nFood \n Prayer Potions", true)
+        .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
