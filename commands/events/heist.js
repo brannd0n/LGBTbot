@@ -22,6 +22,11 @@ class HeistCommand extends commando.Command
                     prompt: 'What time is the event at? (In game time)',
                     type: 'string'
                 },
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
+                }
             ]
         });
     }
@@ -35,6 +40,7 @@ class HeistCommand extends commando.Command
         .setFooter("Please remember that this is completely for fun! This minigame involves a team of robbers try to secure loot undetected while another team of guards attempt to uncover and arrest the robbers before time runs out.", "https://vignette.wikia.nocookie.net/runescape2/images/d/df/Reward_points.png/revision/latest?cb=20170130174417")
         .setThumbnail("https://runescape.wiki/images/d/df/Reward_points.png")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
+        .addField("\u200b", args.description, true)
       message.channel.send(myInfo);
     }
 }
