@@ -19,7 +19,7 @@ class CalendarCommand extends commando.Command
         .setColor(0xFD00FF)
         .setFooter("(remember to check back frequently for upcoming events and updates)")
         .addField("🏅 __**EVENTS CALENDAR**__ 🏅", "Being a community clan, we try to plan and host frequent events for clannies to participate in and socialise. Please find our current & most up-to-date events calendar below.\n \nIf you wish to host an event yourself please let a member of the Events team know and we will add it to the calendar and create a broadcast message.\n \n[Click here to view our calendar](https://docs.google.com/spreadsheets/d/19sW_GnhAl-EqepFAZxp69ZyxiSfMAzmBUeh-xyM9hSc/edit?usp=sharing)")
-        .setImage("https://i.imgur.com/bkNuV43.png");
+        .setImage("https://i.gyazo.com/9038d43d3273d5845504c16c21684b3e.png");
         message.channel.sendEmbed(myInfo);
     }
 }
