@@ -20,10 +20,15 @@ class KingBlackDragonCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
 
     async run(message, args)
     {
@@ -36,6 +41,7 @@ class KingBlackDragonCommand extends commando.Command
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for King Black Dragon (wiki)](https://runescape.wiki/w/King_Black_Dragon/Strategies)")
         .addField("\u200b", "**Recommended:**\nProtection from AntiFire.", true)
+        .addField("\u200b", args.description, true)
         message.channel.send(myInfo);
     }
 }
