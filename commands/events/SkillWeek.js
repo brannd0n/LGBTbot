@@ -30,10 +30,10 @@ class SkillWeekCommand extends commando.Command
     {
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle(":trophy:  __**Weekly Skilling Competition**__ :trophy: ")
+        .setTitle(":trophy: __**Weekly Skilling Competition**__ :trophy: ")
         .setColor(0x4F2095)
         .setThumbnail("https://vignette.wikia.nocookie.net/2007scape/images/b/bd/Stats_icon.png/revision/latest?cb=20160515204513")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:All Week** \n**Host: **" + message.author +"\n**World:** Rs3 Worlds")
+        .addField("\u200b","**Date:** " + args.date + "\n**Time: All Week** \n**Host: **" + message.author +"\n**World:** Rs3 Worlds")
         .addField("\u200b", args.description, true)
         message.channel.send(myInfo);
     }
