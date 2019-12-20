@@ -19,6 +19,7 @@ class DivFaqCommand extends commando.Command
         .setColor(0xFD6600)
         .setTimestamp()
         .setTitle("__FAQ__")
+        .addBlankField(true)
         .setDescription("__**When will I become a verified member?**__\n\n"+
         "To unlock the rest of the server you need to achieve level 3, to do this all you have to do is talk and get to know the other server members for approx 30/40 minutes give or take, once you have achieved level 3 <@159985870458322944> will pm you and a <@&630489074360123392> will assign the verified role when they are available - you don’t need to pm them they get a notification too.\n \n"+
         "__**My friend is interested in joining the Discord, how can I get an invite for them?**__\n\n"+
