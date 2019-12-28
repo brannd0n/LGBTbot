@@ -17,7 +17,7 @@ class AdminResponsibilitiesCommand extends commando.Command
     {
         var myInfo = new discord.RichEmbed()
         .setColor(0x991919)
-        .setDescription("🏆 **Events Team** 🏆",
+        .setDescription("🏆 **Events Team** 🏆 \n\n" +
                 "Events head admins: <@439868870837272577>\n\n" +
                 "• Hosting capping events\n\n" +
                 "• Maintaining the events calendar\n\n" +
