@@ -25,8 +25,8 @@ class AdminResponsibilitiesCommand extends commando.Command
                 "• Encouraging other members to host events and supporting them whilst doing so\n\n" +
                 "• If you are primarily OSRS, host suitable events for the FC community\n\n" +
                 "• Organise and host monthly skilling competitions, share the responsibility of hosting these competitions evenly amongst the events team. (take it in turns)\n\n" +
-                "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n",true)
-        .addField("👨‍👩‍👧‍👦 **Community Management** 👨‍👩‍👧‍👦",
+                "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n" +
+        "👨‍👩‍👧‍👦 **Community Management** 👨‍👩‍👧‍👦 \n\n" +
           "Community management Head admins:<@211973520639524864>\n\n" +
           "• Forum bumping both OSRS and RS3\n\n" +
           "• Management of the OSFC (guest minimum).\n\n" +
