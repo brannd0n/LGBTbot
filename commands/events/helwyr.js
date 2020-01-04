@@ -42,6 +42,7 @@ class HelwyrCommand extends commando.Command
         .addField("\u200b", "[Strategies for Helwyr (wiki)](https://runescape.wiki/w/Helwyr/Strategies)")
         .addField("\u200b", "**Requirements:**\n80 Magic\n40 Seren kill count", true)
         .addField("\u200b", "**Recommended:**\n70+ Prayer (for piety)\n90+ Herb for extremes\nAnything above barrows armour\nAny style works \nHeart tele tabs \nBoB filled with food.", true)
+        .addBlankField()
         .addField("\u200b", args.description, true);
         message.channel.sendEmbed(myInfo);
     }
