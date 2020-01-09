@@ -20,12 +20,12 @@ class ClannieHardMoleCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
+                },
                 {
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
-                },
+                }
             ]
         });
     }
