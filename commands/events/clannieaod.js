@@ -25,7 +25,7 @@ class ClannieAodCommand extends commando.Command
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
-                }
+                },
                 {
                     key: 'description',
                     prompt: 'Describe the event',
@@ -51,4 +51,4 @@ class ClannieAodCommand extends commando.Command
     }
 }
 
-module.exports = AodCommand;
+module.exports = ClannieAodCommand;
