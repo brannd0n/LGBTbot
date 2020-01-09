@@ -26,7 +26,7 @@ class ClannieFistofguthixCommand extends commando.Command
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
-                },
+                }
             ]
         });
     }
