@@ -41,7 +41,7 @@ class SkillingCommand extends commando.Command
         var myInfo = new discord.RichEmbed()
         .setTitle("📊 __**Portables and Pulsecores**__ 📊")
         .setColor(0x00AE86)
-        .setThumbnail("https://runescape.wiki/f/current/5/51/457px-20121217034631%21Max_cape_detail.png")
+        .setThumbnail("https://runescape.wiki/images/5/52/Completionist_cape_%28t%29_detail.png?9fa02")
         .addField("\u200b","**Date:** Sunday " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**Location: ** " + args.location)
         .addField("\u200b", args.description, true);
         message.channel.sendEmbed(myInfo);
