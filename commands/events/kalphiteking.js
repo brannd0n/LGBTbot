@@ -20,6 +20,11 @@ class KalphiteKingCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
+                },
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
                 }
             ]
         });
@@ -35,6 +40,7 @@ class KalphiteKingCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/c/cf/Kalphite_King_%28Melee%29.png?db256")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Kalphite King (wiki)](https://runescape.wiki/w/Kalphite_King/Strategies)")
+        .addField("\u200b", args.description, true);
         message.channel.send(myInfo);
     }
 }
