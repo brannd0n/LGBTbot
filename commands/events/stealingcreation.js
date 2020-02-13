@@ -21,10 +21,15 @@ class StealingcreationCommand extends commando.Command
                     key:'time',
                     prompt: 'What time is the event at? (In game time)',
                     type: 'string'
-                },
-            ]
-        });
-    }
+                  },
+                  {
+                          key: 'description',
+                          prompt: 'Describe the event',
+                          type: 'string'
+                      }
+                  ]
+              });
+          }
 
     async run(message, args)
     {
@@ -35,6 +40,7 @@ class StealingcreationCommand extends commando.Command
         .setFooter("Please remember that this is completely for fun! This is a friendly team-based minigame where teams compete for the most points. Players make and use armour and weaponry to engage in combat, or gain further points through item creation and refinement.", "https://vignette.wikia.nocookie.net/runescape2/images/6/6a/Mg_stealingcreation.jpg/revision/latest?cb=20081111151006")
         .setThumbnail("https://runescape.wiki/images/thumb/8/85/Sacred_clay_body_detail.png/320px-Sacred_clay_body_detail.png")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
+        .addField("\u200b", args.description, true)
         message.channel.send(myInfo);
     }
 }
