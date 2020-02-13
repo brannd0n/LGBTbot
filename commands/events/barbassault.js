@@ -35,7 +35,7 @@ class BarbAssaultCommand extends commando.Command
     {
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle(":yellow_egg: __**Barbarian Assault**__ :yellow_egg:")
+        .setTitle(" :yellow_egg: __**Barbarian Assault**__ :yellow_egg: ")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This is a cooperative, team-based safe combat minigame located at the Barbarian Outpost. A team of five players must work together in order to defeat ten waves of Penance monsters and, finally, their leader, the Penance Queen.", "https://runescape.wiki/images/6/69/Barbarian_Assault_icon.jpg?7ae4a")
         .setThumbnail("https://runescape.wiki/images/6/69/Barbarian_Assault_icon.jpg?7ae4a")
