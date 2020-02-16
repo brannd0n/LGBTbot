@@ -31,7 +31,7 @@ class PenguinHideSeekCommand extends commando.Command
                     key: 'description',
                     prompt: 'Describe the event',
                     type: 'string'
-                },
+                }
 
             ]
         });
