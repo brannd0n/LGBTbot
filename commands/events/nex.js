@@ -20,10 +20,15 @@ class NexCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
 
     async run(message, args)
     {
@@ -37,6 +42,7 @@ class NexCommand extends commando.Command
         .addField("\u200b", "[Strategies for Nex](https://runescape.wiki/w/Nex/Strategies)\nPlease try not to bleed Nex during blood phase.")
         .addField("\u200b", "**Requirements:**\nA charged frozen key\nEither 40 Zaros kills or Ancient ceremonial robes", true)
         .addField("\u200b", "**Recommended:**\nTwo combat styles \nFood \nPrayer Potions \nA trip to glacor caves", true)
+        .addField("\u200b",args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
