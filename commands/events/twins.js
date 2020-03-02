@@ -20,11 +20,15 @@ class TwinsCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
-
+                   },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
     async run(message, args)
     {
         message.delete();
@@ -37,6 +41,7 @@ class TwinsCommand extends commando.Command
         .addField("\u200b", "[Strategies for Twin Furies (wiki)](https://runescape.wiki/w/Twin_Furies/Strategies)")
         .addField("\u200b", "**Requirements:**\n80 Ranged\n40 Zamorak kill count", true)
         .addField("\u200b", "**Recommended:**\n70+ Prayer (for piety)\n90+ Herb for extremes\nAnything above barrows armour\nAny style works \nHeart tele tabs \nBoB filled with food.", true)
+        .addField("\u200b",args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
