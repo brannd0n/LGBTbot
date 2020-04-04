@@ -37,39 +37,6 @@ bot.on("message", function (message) {
     }
 });
 
-bot.on("messageReactionAdd",(reaction,user)=>{
-  if(!user) return;
-  if(user.bot)return;
-  if(!reaction.message.channel.guild) return;
-  
-  const name = reaction.emoji.name;
-  if(name == "❤️") { //❤️
-    const role = reaction.message.guild.roles.find(r => r.name == "RS3 Events");
-    reaction.message.channel.guild.members.get(user.id).addRole(role).catch(console.error);
-    user
-  } else if(name == "💚") { //💚
-    const role = reaction.message.guild.roles.find(r => r.name == "OSRS Events");
-    reaction.message.channel.guild.members.get(user.id).addRole(role).catch(console.error);
-  }
-});
-
-
-bot.on("messageReactionRemove",(reaction,user)=>{
-  if(!user) return;
-  if(user.bot)return;
-  if(!reaction.message.channel.guild) return;
-  
-  const name = reaction.emoji.name;
-  if(name == "❤️") {
-    console.log("Remove RS3 role")
-    const role = reaction.message.guild.roles.find(r => r.name == "RS3 Events");
-    reaction.message.channel.guild.members.get(user.id).removeRole(role).catch(console.error);
-  } else if(name == "💚") {
-    const role = reaction.message.guild.roles.find(r => r.name == "OSRS Events");
-    reaction.message.channel.guild.members.get(user.id).removeRole(role).catch(console.error);
-  }
-  
-});
 bot.login(TOKEN);
 
 http.createServer((req, res) => {
