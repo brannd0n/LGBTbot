@@ -3,7 +3,7 @@ const WelcomeInfoCommand = require('./welcome.js');
 const RulesCommand = require('./rules.js');
 const RanksCommand = require('./ranks.js');
 const RolesCommand = require('./roles.js');
-const EventRolesCommand = require('./eventroles.js');
+const EventRolesCommand = require('./EventRoles.js');
 const CitadelCommand = require('./citadel.js');
 const SocialMediaCommand = require('./social-media.js');
 const CalendarCommand = require('./calendar.js');
@@ -23,7 +23,7 @@ class WelcomeAllCommand extends commando.Command
         rules = new RulesCommand(client);
         ranks = new RanksCommand(client);
         roles = new RolesCommand(client);
-        eventroles = new RolesCommand(client);
+        eventroles = new EventRolesCommand(client);
         citadel = new CitadelCommand(client);
         socialmedia = new SocialMediaCommand(client);
         calendar = new CalendarCommand(client);
