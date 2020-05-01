@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class OsrsanksCommand extends commando.Command
+class OsrsranksCommand extends commando.Command
 {
     constructor(client)
     {
@@ -28,4 +28,4 @@ class OsrsanksCommand extends commando.Command
     }
 }
 
-module.exports = OsrsanksCommand;
+module.exports = OsrsranksCommand;
