@@ -4,7 +4,7 @@ const RulesCommand = require('./rules.js');
 const RanksCommand = require('./ranks.js');
 const OsrsranksCommand = require('./osrsranks.js');
 const RolesCommand = require('./roles.js');
-const EventRolesCommand = require('./Eventroles.js');
+const EventRolesCommand = require('./EventRoles.js');
 const CitadelCommand = require('./citadel.js');
 const SocialMediaCommand = require('./social-media.js');
 const CalendarCommand = require('./calendar.js');
@@ -29,7 +29,7 @@ class WelcomeAllCommand extends commando.Command
         citadel = new CitadelCommand(client);
         socialmedia = new SocialMediaCommand(client);
         calendar = new CalendarCommand(client);
-    }
+    } 
 
     async run(message, args)
     {
