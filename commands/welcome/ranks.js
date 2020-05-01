@@ -25,7 +25,7 @@ class RanksCommand extends commando.Command
         .addBlankField()
         .addField("⭐ __Staff Ranks__ ⭐", "**Organiser:** Permanent member of the\n admin team.\n \n This staff rank is split into two types of admin, community management & events team. \n \n **Coordinator:** Valued member of the \n admin team, who consistently go the \n extra mile.", true)
         .addField("🔑 __Leadership Team__ 🔑", "**Overseer:** Awarded to trusted members\n of the admin team, who have proven they\n are capable of managing any issue within\n the clan on a daily basis while continuing\n to help improve the clan. \n \n **Owner/Deputy Owner:** Owners and\n founding members. \n Also awarded to members who have shown\n extraordinary commitment to the clan.", true)
-        .addField(" \u200b ", "⚠️ **CLAN RANKS WILL BE GIVEN ONCE A DAY** ⚠️");
+        .addField(" \u200b ", "⚠️ **CLAN RANKS WILL BE GIVEN ONCE A DAY** ⚠️")
         message.channel.sendEmbed(myInfo);
     }
 }
