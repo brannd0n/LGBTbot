@@ -23,7 +23,7 @@ class WelcomeAllCommand extends commando.Command
         welcome = new WelcomeInfoCommand(client);
         rules = new RulesCommand(client);
         ranks = new RanksCommand(client);
-        osrsranks = new OsrsanksCommand(client);
+        osrsranks = new OsrsranksCommand(client);
         roles = new RolesCommand(client);
         eventroles = new RolesCommand(client);
         citadel = new CitadelCommand(client);
