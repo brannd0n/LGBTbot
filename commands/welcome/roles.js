@@ -20,7 +20,7 @@ class RolesCommand extends commando.Command
         .setFooter("Last updated")
         .setTimestamp()
         .addField("🔡 __Discord Roles__ 🔡", "While you are in the discord you also\n have the option to choose roles, to\n represent how you identify.\n \n We have tried to be as inclusive as\n possible with the roles that are\n available, however if the role you want\n isn't on the current list please let a\n member of the <@&601391497698344960> team know and\n we will add it as long as it's **within reason**.", true)
-        .addField("\u200b", "These are the current roles available, for everybody to choose:\n __**PLEASE ASK A MEMBER OF THE ADMIN TEAM IF YOU WANT ANY**__")
+        .addField("\u200b", "These are the current roles available, for everybody to choose:\n __**PLEASE ASK A MEMBER OF THE ADMIN TEAM IF YOU WANT ANY**__", true)
         .setImage("https://i.gyazo.com/4bae06294fac976d6877ed9afb8abf46.png")
         message.channel.sendEmbed(myInfo);
     }
