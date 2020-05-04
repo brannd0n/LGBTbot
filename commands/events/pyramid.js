@@ -37,7 +37,7 @@ class PyramidCommand extends commando.Command
         var myInfo = new discord.RichEmbed()
         .setTitle("__**Pyramid Plunder**__")
         .setColor(0x4F2095)
-        .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/0/01/Pyramid_Plunder_logo.jpg?70655)
+        .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/0/01/Pyramid_Plunder_logo.jpg?70655")
         .setThumbnail("https://oldschool.runescape.wiki/images/0/01/Pyramid_Plunder_logo.jpg?70655")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W523")
         .addField("\u200b", args.description, true)
