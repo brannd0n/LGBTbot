@@ -39,7 +39,7 @@ class OsrsbarrowsCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/8/8c/Barrows_logo.jpg?97142")
         .setThumbnail("https://oldschool.runescape.wiki/images/8/8c/Barrows_logo.jpg?97142")
-        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 523\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + "\n🌍 **World:** 523\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Barrows](https://oldschool.runescape.wiki/w/Barrows/Strategies)")
         .addField("\u200b", "**Requirements:**\nCompletion of Quest Priest in Peril is required to enter Morytania. \nPartial completion of Quests Nature Spirit is required to enter Morytania swamp, and thus to visit the Barrows. (Not necessary if using barrows teleport tablets.) ", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions", true)
