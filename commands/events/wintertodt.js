@@ -1,14 +1,14 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class OsrswintertodtCommand extends commando.Command
+class WintertodtCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'osrswintertodt',
+            name: 'wintertodt',
             group: 'events',
-            memberName: 'osrswintertodt',
+            memberName: 'wintertodt',
             description: 'Wintertodt event details',
             args: [
                 {
@@ -49,4 +49,4 @@ class OsrswintertodtCommand extends commando.Command
     }
 }
 
-module.exports = OsrswintertodtCommand;
+module.exports = WintertodtCommand;
