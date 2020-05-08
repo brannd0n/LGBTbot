@@ -41,7 +41,7 @@ class WintertodtCommand extends commando.Command
         .setThumbnail("https://oldschool.runescape.wiki/images/7/78/Burning_brazier_%28Wintertodt%29.png?7b131")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 523\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Wintertodt](https://oldschool.runescape.wiki/w/Wintertodt/Strategies)")
-        .addField("\u200b", "**Requirements:**\nAxe \nLevel 50 Firemaking \nWarm Clothing [List of Warm Cloting] (https://oldschool.runescape.wiki/w/Wintertodt/Warm_clothing)) ", true)
+        .addField("\u200b", "**Requirements:**\nAxe \nLevel 50 Firemaking \nWarm Clothing [List of Warm Cloting] (https://oldschool.runescape.wiki/w/Wintertodt/Warm_clothing)", true)
         .addField("\u200b", "**Recommended:**\nFood", true)
         .addBlankField()
         .addField("\u200b", args.description, true)
