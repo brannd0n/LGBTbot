@@ -39,7 +39,7 @@ class OsrsdkCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Any unique drops will be split after the event.", "https://oldschool.runescape.wiki/images/8/8b/Dagannoth_Prime.png?945b1")
         .setThumbnail("https://oldschool.runescape.wiki/images/8/8b/Dagannoth_Prime.png?945b1")
-        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 523\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + "\n🌍 **World:** 523\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Daganoth Kings](https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies)")
         .addField("\u200b", "**Requirements:**\n 70+ Combat stats ", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions \nSuper Antipoisons \nRune thrownaxe", true)
