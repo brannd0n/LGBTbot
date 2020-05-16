@@ -10,7 +10,7 @@ class OsrsbarbassaultCommand extends commando.Command
             group: 'events',
             memberName: 'osrsbarbassault',
             description: 'Barbarian Assualt event details',
-            examples: ['./barbassault "28 September" "20:00" "Describe where to meet and a basic premise here"'],
+            examples: ['./osrsbarbassault "28 September" "20:00" "Describe where to meet and a basic premise here"'],
             args: [
                 {
                     key: 'date',
