@@ -42,7 +42,7 @@ class OsrsdkCommand extends commando.Command
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 523\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Daganoth Kings](https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies)")
         .addField("\u200b", "**Requirements:**\nFremninik Trials or 1k gp for boat to Waterbirth ", true)
-        .addField("\u200b", "**Recommended:**\n:attack: 70+ \n:strength: 70+ \n:magic: 75+ \n:range: 70+ \n:defence: 80+ \n:Hp: 70+ \n:prayer: 45+", true)
+        .addField("\u200b", "**Recommended:**\n<:Attack:714342791546667180> 70+ \n:strength: 70+ \n:magic: 75+ \n:range: 70+ \n:defence: 80+ \n:Hp: 70+ \n:prayer: 45+", true)
         .addBlankField()
         .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
