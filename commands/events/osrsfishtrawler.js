@@ -46,7 +46,7 @@ class OsrsfishtrawlerCommand extends commando.Command
         .setThumbnail("https://oldschool.runescape.wiki/images/8/86/Angler%27s_outfit_equipped.png?cef02")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** " + args.world + "\n**Host:** " + message.author)
         .addField("\u200b", "[Fishing Trawler Strategy](https://oldschool.runescape.wiki/w/Fishing_Trawler#Playing_the_game)")
-        .addField("\u200b", "**Requirements:**\n<:Fishing:721162050725740575>15 to catch fish.", true)
+        .addField("\u200b", "**Requirements:**\nLevel 15 Fishing to catch fish.", true)
         .addField("\u200b", "**Recommended:**\n300 swamp paste \nRope \nAtleast one bailing bucket", true)
         .addBlankField()
         .addField("\u200b", args.description, true)
