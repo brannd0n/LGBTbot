@@ -52,7 +52,7 @@ class OwlcityCommand extends commando.Command
         var myInfo = new discord.RichEmbed()
         .setTitle(args.event)
         .setColor(0x4F2095)
-        .setThumbnail("https://media3.giphy.com/media/Q9GF04IhLYnx45GRxc/giphy.gif")
+        .setThumbnail("https://giphy.com/gifs/J4bAUi0AIif1Kwo8XK")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**World:** " + args.world + "\n**Host: **" + message.author +"\n**Where:** " + args.where)
         .addField("\u200b",args.description, true);
         message.channel.sendEmbed(myInfo);
