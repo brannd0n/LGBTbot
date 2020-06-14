@@ -20,7 +20,7 @@ const channels = guild.channels;
 channels.filter(c=>c.type=="text").forEach(async c=>{
   const messages = (await c.fetchMessages()).filter(message=>!message.member);
     if(messages.size > 0){
-//         c.bulkDelete(messages)
+        c.bulkDelete(messages)
     }
   console.log(messages.map(e=>e.author.id))
 })
