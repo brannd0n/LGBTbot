@@ -19,7 +19,7 @@ class ClearMessagesCommand extends commando.Command
 const channels = guild.channels;
 channels.filter(c=>c.type=="text").forEach(async c=>{
   const messages = (await c.fetchMessages()).filter(message=>!guild.members.get(message.member.id));
-  console.log(c)
+  console.log(messages.map(e=>guild.members.get(e.member.id)))
 })
     }
 }
