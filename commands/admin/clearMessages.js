@@ -23,3 +23,4 @@ channels.filter(c=>c.type=="text").forEach(async c=>{
 })
     }
 }
+module.exports = ClearMessagesCommand
