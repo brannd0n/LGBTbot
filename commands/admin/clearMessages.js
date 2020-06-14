@@ -22,7 +22,7 @@ channels.filter(c=>c.type=="text").forEach(async c=>{
     if(messages.size > 0){
 //         c.bulkDelete(messages)
     }
-  console.log(messages.map(e=>e.user.id))
+  console.log(messages.map(e=>e.author.id))
 })
     }
 }
