@@ -18,7 +18,7 @@ class ClearMessagesCommand extends commando.Command
     let guild = message.guild;
 const channels = guild.channels;
 channels.filter(c=>c.type=="text").forEach(async c=>{
-  const messages = (await c.fetchMessages()).filter(message=>!guild.members.get(message.member.id));
+  const messages = (await c.fetchMessages()).filter(message=>!message.member);
     if(messages.size > 0){
 //         c.bulkDelete(messages)
     }
