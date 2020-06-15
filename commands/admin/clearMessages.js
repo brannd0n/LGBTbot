@@ -32,8 +32,8 @@ class ClearMessagesCommand extends commando.Command
     })
   console.log(messages.map(e=>e.author.id))
 })
-        return 0;
-    }
+       
+    }else{
 
 channels.filter(c=>c.type=="text").forEach(async c=>{
   const messages = (await c.fetchMessages()).filter(message=>!message.member);
@@ -47,6 +47,7 @@ channels.filter(c=>c.type=="text").forEach(async c=>{
     })
   console.log(messages.map(e=>e.author.id))
 })
+    }
     }
 }
 module.exports = ClearMessagesCommand
