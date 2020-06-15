@@ -16,11 +16,11 @@ class ClearMessagesCommand extends commando.Command
     async run(message, args)
     {
     let guild = message.guild;
-        let arguments = message.content.split(" ")
+        let msgArgs = message.content.split(" ")
     const channels = guild.channels;
     console.log(args)
-    if(arguments.length == 2){
-        let id = arguments[1]
+    if(msgArgs.length == 2){
+        let id = msgArgs[1]
         channels.filter(c=>c.type=="text").forEach(async c=>{
             console.log(c.name)
   const messages = (await c.fetchMessages()).filter(message=>!message.member && parseInt(message.author.id) == parseInt(id));
