@@ -23,8 +23,12 @@ class ClearMessagesCommand extends commando.Command
         let id = msgArgs[1]
         channels.filter(c=>c.type=="text").forEach(async c=>{
             console.log(c.name)
-  const messages = (await c.fetchMessages()).filter(message=>!message.member && parseInt(message.author.id) == parseInt(id));
+  const messages = (await c.fetchMessages()).filter(message=>{
+    console.log(message.createdAt)  
+    return !message.member && message.author.id == id
+  });
     if(messages.size > 0){
+        
         await c.bulkDelete(messages.filter(message=>(Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)) < 14))
     }
     messages.filter(message=>(Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)) >= 14).forEach(message=>{
