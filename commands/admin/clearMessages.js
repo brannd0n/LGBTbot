@@ -26,7 +26,7 @@ class ClearMessagesCommand extends commando.Command
   const messages = (await c.fetchMessages()).filter(message=>{
 //     console.log((Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)), !!message.member,message.author.id,id)
 //     console.log(!!message.member)
-      console.log(!message.member,message.author.id,id== message.author.id)
+//       console.log(!message.member,message.author.id,id== message.author.id)
     return !message.member && message.author.id == id
   });
     if(messages.size > 0){
