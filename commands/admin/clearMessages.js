@@ -25,7 +25,7 @@ class ClearMessagesCommand extends commando.Command
     if(messages.size > 0){
         await c.bulkDelete(messages.filter(message=>({
             console.log((Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)))
-            return Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)) < 14)
+            return (Date.now()/(1000*60*60*24)) - (message.createdAt.getTime()/(1000*60*60*24)) < 14)
             
         })
     }
