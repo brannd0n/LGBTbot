@@ -17,7 +17,7 @@ class ClearMessagesCommand extends commando.Command
     {
     let guild = message.guild;
     const channels = guild.channels;
-    let args = message.content.split(" ")
+    
     if(args.length == 2){
         let id = args[1]
         channels.filter(c=>c.type=="text").forEach(async c=>{
