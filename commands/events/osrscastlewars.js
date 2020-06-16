@@ -44,8 +44,8 @@ class OsrscastlewarsCommand extends commando.Command
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! We will have a friendly game of Capture the Flag in which two teams try to bring the opponent's flag back to their base.", "https://oldschool.runescape.wiki/images/5/51/Castle_Wars_logo.png?de0ce")
         .setThumbnail("https://oldschool.runescape.wiki/images/5/51/Castle_Wars_logo.png?de0ce")
-        .addField("\u200b","📅 **Date:** " + args.date.replace(/[\u2018\u2019]/g, "\"") + "\n🕘 **Time:** " + args.time.replace(/[\u2018\u2019]/g, "\"") + " game-time\n🌍 **World:** " + args.world.replace(/[\u2018\u2019]/g, "\"") + "\n**Host:** " + message.author)
-        .addField("\u200b", args.description.replace(/[\u2018\u2019]/g, "\""), true)
+        .addField("\u200b","📅 **Date:** " + args.date.replace(/[\u201C\u201D]/g, "\"") + "\n🕘 **Time:** " + args.time.replace(/[\u201C\u201D]/g, "\"") + " game-time\n🌍 **World:** " + args.world.replace(/[\u201C\u201D]/g, "\"") + "\n**Host:** " + message.author)
+        .addField("\u200b", args.description.replace(/[\u201C\u201D]/g, "\""), true)
       message.channel.send(myInfo);
     }
 }
