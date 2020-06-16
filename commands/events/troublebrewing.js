@@ -39,11 +39,13 @@ class TroublebrewingCommand extends commando.Command
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! We will have Two friendly teams try to brew the most bottles of 'rum'. Experience in a variety of skills can be earned for performing the many tasks needed in the process of 'rum' production.", "https://vignette.wikia.nocookie.net/runescape2/images/b/be/Mg_troublebrewing.jpg/revision/latest?cb=20080728164336")
         .setThumbnail("https://runescape.wiki/images/b/be/Mg_troublebrewing.jpg") 
-        .addField("\u200b","📅 **Date:** " + args.date.replace(/[“”‘’"']/g,'') + "\n🕘 **Time:** " + args.time.replace(/[“”‘’"']/g,'') " game-time" + "\n**Host: **" + message.author +"\n**World:** W23")
-        .addField("\u200b", "**Requirements:**\n40 Cooking and completed Cabin Fever Quest", true)
+        .addField("\u200b","📅 **Date:** " + args.date.replace(/[“”‘’"']/g,'') + "\n🕘 **Time:** " + args.time.replace(/[“”‘’"']/g,'') + " game-time" + "\n**Host: **" + message.author +"\n**World:** W23")
+        .addField("\u200b", "**Requirements:**\n40 Cooking and completed Cabin Fever Quest")
         .addBlankField()
         .addBlankField()
         .addField("\u200b", args.description.replace(/[“”‘’"']/g,''), true)
         message.channel.send(myInfo);
     }
 }
+
+module.exports = TroublebrewingCommand;
