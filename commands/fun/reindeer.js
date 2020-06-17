@@ -14,7 +14,7 @@ class ReindeerCommand extends commando.Command
 
     async run(message, args)
     {
-        message.reply('agressively eats carrots.');
+        message.channel.send("<@165225595733671937> agressively eats carrots.");
     }
 }
 
