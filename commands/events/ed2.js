@@ -40,7 +40,7 @@ class Ed2Command extends commando.Command
         .setThumbnail("https://runescape.wiki/images/thumb/a/a3/Black_stone_dragon.png/1200px-Black_stone_dragon.png?be0ef")
         .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Dragonkin Laboratory](https://runescape.wiki/w/Dragonkin_Laboratory/Strategies)")
-        .addField("\u200b", "**Requirements:**\nAt least Tier 70 weapon and armour \nSuper Antifires or Reg Antifires \nBeast of Burden \nAt least 43 Prayer", true)
+        .addField("\u200b", "**Requirements:**\nAt least Tier 70 weapon and armour \nSuper Antifires or Reg Antifires \nBeast of Burden \nAt least 71 Prayer", true)
         .addField("\u200b", "**Recommended:**\nTier 80 weapons or higher \n Supreme Overload Salves \nMobile Perk \nRing of Death", true)
         .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
