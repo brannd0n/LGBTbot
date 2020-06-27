@@ -39,8 +39,8 @@ class BarbAssaultCommand extends commando.Command
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This is a cooperative, team-based safe combat minigame located at the Barbarian Outpost. A team of five players must work together in order to defeat ten waves of Penance monsters and, finally, their leader, the Penance Queen.", "https://runescape.wiki/images/6/69/Barbarian_Assault_icon.jpg?7ae4a")
         .setThumbnail("https://runescape.wiki/images/6/69/Barbarian_Assault_icon.jpg?7ae4a")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
-        .addField("\u200b", args.description, true)
+        .addField("\u200b","📅 **Date:** " + args.date.replace(/[“”‘’"']/g,'') + "\n🕘 **Time:** " + args.time.replace(/[“”‘’"']/g,'') + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
+        .addField("\u200b", args.description.replace(/[“”‘’"']/g,''), true)
         message.channel.send(myInfo);
     }
 }
