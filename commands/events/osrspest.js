@@ -40,7 +40,7 @@ class OsrspestCommand extends commando.Command
     {
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle("<a:pvm:549239415281549323> __**Pest Control Event**__ <a:pvm:549239415281549323>")
+        .setTitle("__**Pest Control Event**__")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Any unique drops will be split after the event.", "https://oldschool.runescape.wiki/images/a/aa/Void_Knight.png?61ae6")
         .setThumbnail("https://oldschool.runescape.wiki/images/a/aa/Void_Knight.png?61ae6")
