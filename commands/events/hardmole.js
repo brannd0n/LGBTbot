@@ -20,10 +20,15 @@ class HardMoleCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                  },
+                  {
+                      key: 'description',
+                      prompt: 'Describe the event',
+                      type: 'string'
+                  }
+              ]
+          });
+      }
 
     async run(message, args)
     {
@@ -37,6 +42,7 @@ class HardMoleCommand extends commando.Command
         .addField("\u200b", "[Strategies for Hardmode Giant mole](https://runescape.wiki/w/Giant_mole/Strategies)")
         .addField("\u200b", "**Requirements:**\nNone", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions \nFreedom/Anticipation unlocked", true)
+        .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
