@@ -42,6 +42,7 @@ class HardMoleCommand extends commando.Command
         .addField("\u200b", "[Strategies for Hardmode Giant mole](https://runescape.wiki/w/Giant_mole/Strategies)")
         .addField("\u200b", "**Requirements:**\nNone", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions \nFreedom/Anticipation unlocked", true)
+        .addBlankField()
         .addField("\u200b", args.description, true)
         message.channel.sendEmbed(myInfo);
     }
