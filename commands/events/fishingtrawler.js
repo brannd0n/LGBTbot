@@ -21,11 +21,15 @@ class FishingtrawlerCommand extends commando.Command
                     key:'time',
                     prompt: 'What time is the event at? (In game time)',
                     type: 'string'
-                },
-            ]
-        });
-    }
-
+                  },
+                  {
+                          key: 'description',
+                          prompt: 'Describe the event',
+                          type: 'string'
+                      }
+                  ]
+              });
+          }
     async run(message, args)
     {
         message.delete();
@@ -35,6 +39,7 @@ class FishingtrawlerCommand extends commando.Command
         .setFooter("Please remember that this is completely for fun! We will work together to keep a trawler afloat while keeping nets fixed in order to catch as many fish as possible.", "https://vignette.wikia.nocookie.net/runescape2/images/1/14/Mg_fishingtrawler.jpg/revision/latest?cb=20080728145136")
         .setThumbnail("https://runescape.wiki/images/thumb/b/b2/Raw_manta_ray_detail.png/237px-Raw_manta_ray_detail.png?668eb")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + message.author +"\n**World:** W23")
+        .addField("\u200b", args.description, true)
       message.channel.send(myInfo);
     }
 }
