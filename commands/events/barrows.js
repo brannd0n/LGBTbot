@@ -8,7 +8,7 @@ class BarrowsCommand extends commando.Command
         super(client,{
             name: 'barrows',
             group: 'events',
-            memberName: 'osrsbarrows',
+            memberName: 'barrows',
             description: 'Barrows event details',
             args: [
                 {
