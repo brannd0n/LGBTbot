@@ -16,7 +16,7 @@ class WigLinksCommand extends commando.Command
     async run(message, args)
     {
         var myInfo = new discord.RichEmbed()
-        .setColor(0x6F00FF)
+        .setColor(0xEF563D)
         .addField("**Women in Games links**", "🐦 [Twitter @wigj](https://twitter.com/wigj)\n\n" +
         "🇫 [Facebook Group @womeningameswigj](https://www.facebook.com/groups/womeningameswigj/)\n\n" +
         ":office: [LinkdIN Company Page](https://www.linkedin.com/company/wigj/)\n\n" +
