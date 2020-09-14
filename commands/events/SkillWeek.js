@@ -32,7 +32,7 @@ class SkillWeekCommand extends commando.Command
         const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
         const filtered = updated_args.filter(el => el && el != '');
         const new_args = {
-            datet: filtered[0] || '',
+            date: filtered[0] || '',
             description:  filtered[1] || '',
   };
         
