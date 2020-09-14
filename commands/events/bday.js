@@ -48,7 +48,7 @@ class BdayCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("To celebrate the clans turning aniversary we are having a Birthday party. Please come to the citadel dressed in your best rainbow colours or sporting the clan cloak. We want as many clannies there as possible so we can get a massive group picture of us all wishing the clan a Happy Birthday. We will bring cake.", "https://i.gyazo.com/12d563d263f4e8a740dcc89d58a8badd.png")
         .setThumbnail("https://i.gyazo.com/12d563d263f4e8a740dcc89d58a8badd.png")
-        .addField("\u200b","**Date:** Sunday " + new_args.date + "\n**Time:** 19:00 game-time\n**Host: **" + message.author +" \n**Theme: **" + new_args.theme)
+        .addField("\u200b","**Date:**" + new_args.date + "\n**Time:** 19:00 game-time\n**Host: **" + message.author +" \n**Theme: **" + new_args.theme)
         .addField("\u200b", new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
