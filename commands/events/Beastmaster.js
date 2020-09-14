@@ -47,11 +47,11 @@ async run(message, args)
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Please feel free to PM me if you have any questions.", "https://runescape.wiki/images/b/b3/Beastmaster_Durzag.png?51849")
         .setThumbnail("https://runescape.wiki/images/b/b3/Beastmaster_Durzag.png?51849")
-        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Beastmaster](https://runescape.wiki/w/Beastmaster_Durzag/Strategies)")
         .addField("\u200b", "**Requirements:**\nTier 60 weapons/armor \nBeast of Burden \nAccess to protection prayers/curses \nBuff potion(s)", true)
         .addField("\u200b", "**Recommended:**\nTier 75 weapons and armor \nOverloads \nExcalibur \nRing of Death \nSign of life", true)
-        .addField("\u200b", args.description, true)
+        .addField("\u200b", new_args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
