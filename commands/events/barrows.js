@@ -33,18 +33,27 @@ class BarrowsCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            description:  filtered[2] || '',
+        };
+        
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle("⚔️ __**Barrows Event**__ ⚔️")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://runescape.wiki/images/6/64/Barrows_icon.jpg?3f834")
         .setThumbnail("https://runescape.wiki/images/6/64/Barrows_icon.jpg?3f834")
-        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + "\n🌍 **World:** 23\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + "\n🌍 **World:** 23\n**Host:** " + message.author)
         .addField("\u200b", "[Strategies for Barrows](https://runescape.wiki/w/Barrows/Strategies)")
         .addField("\u200b", "**Requirements:**\nNone", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions", true)
         .addBlankField()
-        .addField("\u200b", args.description, true)
+        .addField("\u200b", new_args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
