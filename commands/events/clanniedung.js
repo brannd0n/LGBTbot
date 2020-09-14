@@ -37,13 +37,22 @@ class ClannieDungCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            host:  filtered[2] || '',
+            discription: filtered[3] || '',
+        };
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle("🔑 __**Dungeoneering Party**__ 🔑")
         .setColor(0x00AE86)
         .setThumbnail("https://runescape.wiki/f/current/2/2d/20120810010504%21Ring_of_kinship_detail.png")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host +" \n**Location: ** W23 Daemonheim")
-        .addField("\u200b", args.description, true);
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +" \n**Location: ** W23 Daemonheim")
+        .addField("\u200b", new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
 }
