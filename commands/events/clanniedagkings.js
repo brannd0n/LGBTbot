@@ -25,6 +25,11 @@ class ClannieDagkingsCommand extends commando.Command
                     key: 'time',
                     prompt: 'What time is the event? (e.g. 21:00)',
                     type: 'string'
+                },
+                                {
+                    key: 'description',
+                    prompt: 'Describe the event.',
+                    type: 'string'
                 }
             ]
         });
