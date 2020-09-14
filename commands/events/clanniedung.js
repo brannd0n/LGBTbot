@@ -44,7 +44,7 @@ class ClannieDungCommand extends commando.Command
             date: filtered[0] || '',
             time:  filtered[1] || '',
             host:  filtered[2] || '',
-            discription: filtered[3] || '',
+            description: filtered[3] || '',
         };
         message.delete();
         var myInfo = new discord.RichEmbed()
