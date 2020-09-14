@@ -39,6 +39,7 @@ class ClannieDagkingsCommand extends commando.Command
             date: filtered[0] || '',
             host:  filtered[1] || '',
             time:  filtered[2] || '',
+            description:  filtered[3] || '',
 
         };
         
@@ -52,6 +53,8 @@ class ClannieDagkingsCommand extends commando.Command
         .addField("\u200b", "[Strategies for Dagannoth Kings](https://runescape.wiki/w/Dagannoth_Kings/Strategies)")
         .addField("\u200b", "**Requirements:**\nNone", true)
         .addField("\u200b", "**Recommended:**\nDag Kings TeleTab\n90+ Herb for extremes\nAnything above barrows armour", true)
+        .addBlankField()
+        .addField("\u200b",new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
 }
