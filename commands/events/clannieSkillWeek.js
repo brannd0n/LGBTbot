@@ -33,13 +33,22 @@ class ClannieSkillWeekCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            host:  filtered[1] || '',
+            description:  filtered[2] || '',
+        };
+        
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle(":trophy:  __**Weekly Skilling Competition**__ :trophy: ")
         .setColor(0x4F2095)
         .setThumbnail("https://vignette.wikia.nocookie.net/2007scape/images/b/bd/Stats_icon.png/revision/latest?cb=20160515204513")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:All Week** \n**Host: **" + args.host +"\n**World:** Rs3 Worlds")
-        .addField("\u200b", args.description, true)
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:All Week** \n**Host: **" + new_args.host +"\n**World:** Rs3 Worlds")
+        .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo);
     }
 }
