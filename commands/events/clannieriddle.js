@@ -38,13 +38,23 @@ class ClannieRiddleCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            host:  filtered[2] || '',
+            description: filtered[3] || '',
+        };
+        
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle("🏰 __**RIDDLE AND SEEK**__ 🏰")
         .setColor(0x4F2095)
         .setThumbnail("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/146/world-map_1f5fa.png")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host +"\n**World:** W23")
-        .addField("\u200b",args.description, true);
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**World:** W23")
+        .addField("\u200b",new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
 }
