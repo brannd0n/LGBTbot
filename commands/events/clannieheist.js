@@ -33,13 +33,22 @@ class ClannieHeistCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            host:  filtered[2] || '',
+        };
+        
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle(":spy:  __**Heist Event**__ :spy: ")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This minigame involves a team of robbers try to secure loot undetected while another team of guards attempt to uncover and arrest the robbers before time runs out.", "https://vignette.wikia.nocookie.net/runescape2/images/d/df/Reward_points.png/revision/latest?cb=20170130174417")
         .setThumbnail("https://runescape.wiki/images/d/df/Reward_points.png")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host +"\n**World:** W23")
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**World:** W23")
       message.channel.send(myInfo);
     }
 }
