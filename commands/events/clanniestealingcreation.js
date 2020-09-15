@@ -33,13 +33,22 @@ class ClannieStealingcreationCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            host:  filtered[2] || '',
+        };
+        
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle(":hammer_pick:  __**Stealing Creation Event**__ :hammer_pick: ")
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This is a friendly team-based minigame where teams compete for the most points. Players make and use armour and weaponry to engage in combat, or gain further points through item creation and refinement.", "https://vignette.wikia.nocookie.net/runescape2/images/6/6a/Mg_stealingcreation.jpg/revision/latest?cb=20081111151006")
         .setThumbnail("https://runescape.wiki/images/thumb/8/85/Sacred_clay_body_detail.png/320px-Sacred_clay_body_detail.png")
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host +"\n**World:** W23")
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**World:** W23")
         message.channel.send(myInfo);
     }
 }
