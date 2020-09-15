@@ -48,12 +48,23 @@ class ClannieEventCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            event: filtered[0] || '',
+            date:  filtered[1] || '',
+            time:  filtered[2] || '',
+            host: filtered[3] || '',
+            where: filtered[4] || '',
+            description: filtered[5] || '\u200B',
+        };
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle(args.event)
+        .setTitle(new_args.event)
         .setColor(0x4F2095)
-        .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host +"\n**Where:** " + args.where)
-        .addField("\u200b",args.description, true);
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**Where:** " + new_args.where)
+        .addField("\u200b",new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
 }
