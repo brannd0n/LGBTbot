@@ -50,7 +50,7 @@ class FlashpowderfactoryCommand extends commando.Command
         .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
         .addField("\u200b", "**Requirements:**\n75 Theiving & Agility \n50 Herblore  ", true)
         .addBlankField()
-        .addField("\u200b", new_args.description), true)
+        .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo);
     }
 }
