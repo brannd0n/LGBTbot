@@ -38,7 +38,7 @@ class VoragoCommand extends commando.Command
         const new_args = {
             date: filtered[0] || '',
             time:  filtered[1] || '',
-            description: filtered[3] || '\u200B',
+            description: filtered[2] || '\u200B',
         };
         message.delete();
         var myInfo = new discord.RichEmbed()
