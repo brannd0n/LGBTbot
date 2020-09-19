@@ -50,6 +50,7 @@ class VoragoCommand extends commando.Command
         .addField("\u200b", "[Strategies for Vorago (wiki)](https://runescape.wiki/w/Vorago/Strategies)")
         .addField("\u200b", "**Requirements:**\nTalk to Vorago", true)
         .addField("\u200b", "**Recommended:**\nAncient Curses\nOverloads\nT80+ DPS Armour\nMagic or Ranged \nBoB filled with food.", true)
+        .addBlankField()
         .addField("\u200b", new_args.description, true);
         message.channel.sendEmbed(myInfo);
     }
