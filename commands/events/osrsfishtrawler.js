@@ -38,18 +38,27 @@ class OsrsfishtrawlerCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            date: filtered[0] || '',
+            time:  filtered[1] || '',
+            world:  filtered[2] || '',
+            description: filtered[3] || '\u200B',
+        };
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle(":fishing_pole_and_fish: __**Fishing Trawler Event**__ :fishing_pole_and_fish:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/8/86/Angler%27s_outfit_equipped.png?cef02")
         .setThumbnail("https://oldschool.runescape.wiki/images/8/86/Angler%27s_outfit_equipped.png?cef02")
-        .addField("\u200b","📅 **Date:** " + args.date + "\n🕘 **Time:** " + args.time + " game-time\n🌍 **World:** " + args.world + "\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** " + new_args.world + "\n**Host:** " + message.author)
         .addField("\u200b", "[Fishing Trawler Strategy](https://oldschool.runescape.wiki/w/Fishing_Trawler#Playing_the_game)")
         .addField("\u200b", "**Requirements:**\nLevel 15 Fishing to catch fish.", true)
         .addField("\u200b", "**Recommended:**\n300 swamp paste \nRope \nAtleast one bailing bucket", true)
         .addBlankField()
-        .addField("\u200b", args.description, true)
+        .addField("\u200b", new_args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
