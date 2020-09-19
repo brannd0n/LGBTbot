@@ -47,7 +47,7 @@ class FlashpowderfactoryCommand extends commando.Command
         .setColor(0x4F2095)
         .setFooter("Please remember that this is completely for fun! This is a minigame that uses Agility, Thieving and Herblore, requiring players to collect the reagents for making flash powder and take them to the powder making machines, while traversing obstacles and pickpocketing other players (or being pickpocketed themselves). Reward points from the game can be swapped for experience or parts of the factory outfit. ", "https://vignette.wikia.nocookie.net/runescape2/images/c/c4/Mg_roguesden.jpg/revision/latest?cb=20080728143017")
         .setThumbnail("https://runescape.wiki/images/thumb/8/8f/Factory_top_detail.png/261px-Factory_top_detail.png?152ce")
-        .addField("\u200b","📅 **Date:** " + new_args.date) + "\n🕘 **Time:** " + new_args.time) + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
+        .addField("\u200b","📅 **Date:** " + new_args.date) + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23" + "\n**Host:** " + message.author)
         .addField("\u200b", "**Requirements:**\n75 Theiving & Agility \n50 Herblore  ", true)
         .addBlankField()
         .addField("\u200b", new_args.description), true)
