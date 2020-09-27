@@ -67,7 +67,7 @@ class OsrsClannieCommand extends commando.Command
         };
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle(args.event)
+        .setTitle(new_args.event)
         .setColor(0x4F2095)
         .setThumbnail("https://oldschool.runescape.wiki/images/4/46/Old_School_RuneScape_Mobile_icon.png?6b7d1")
         .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + new_args.host + "\n**Where:** " + new_args.where)
