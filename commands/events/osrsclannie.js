@@ -53,13 +53,25 @@ class OsrsClannieCommand extends commando.Command
 
     async run(message, args)
     {
+        const arg_string = Object.values(args).map(val => val);
+        const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+        const filtered = updated_args.filter(el => el && el != '');
+        const new_args = {
+            event: filtered[0] || '',
+            date:  filtered[1] || '',
+            time:  filtered[2] || '',
+            world: filtered[3] || '',
+            host: filtered[4] || '',
+            where: filtered[5] || '',
+            description: filtered[6] || '\u200B',
+        };
         message.delete();
         var myInfo = new discord.RichEmbed()
         .setTitle(args.event)
         .setColor(0x4F2095)
         .setThumbnail("https://oldschool.runescape.wiki/images/4/46/Old_School_RuneScape_Mobile_icon.png?6b7d1")
-        .addField("\u200b","**Date:** " + args.date.replace(/[“”‘’"']/g,'') + "\n**Time:** " + args.time.replace(/[“”‘’"']/g,'') + "\n**World:** " + args.world.replace(/[“”‘’"']/g,'') + "\n**Host: **" + args.host.replace(/[“”‘’"']/g,'') +"\n**Where:** " + args.where.replace(/[“”‘’"']/g,''))
-        .addField("\u200b", args.description.replace(/[“”‘’"']/g,''), true)
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + new_args.host +"\n**Where:** " + new_args.where)
+        .addField("\u200b", new_args.description, true)
         message.channel.sendEmbed(myInfo);
     }
 }
