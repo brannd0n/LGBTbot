@@ -55,7 +55,7 @@ class EventCommand extends commando.Command
         };
         message.delete();
         var myInfo = new discord.RichEmbed()
-        .setTitle(args.event)
+        .setTitle(new_args.event)
         .setColor(0x4F2095)
         .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + message.author +"\n**Where:** " + new_args.where)
         .addField("\u200b",new_args.description, true);
