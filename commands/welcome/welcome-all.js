@@ -4,11 +4,10 @@ const RulesCommand = require('./rules.js');
 const RanksCommand = require('./ranks.js');
 const OsrsranksCommand = require('./osrsranks.js');
 const RolesCommand = require('./roles.js');
-const EventRolesCommand = require('./EventRoles.js');
 const CitadelCommand = require('./citadel.js');
 const SocialMediaCommand = require('./social-media.js');
 const CalendarCommand = require('./calendar.js');
-var welcome, rules, ranks, osrsranks, roles, eventroles, citadel, socialmedia, calendar;
+var welcome, rules, ranks, osrsranks, roles, citadel, socialmedia, calendar;
 
 class WelcomeAllCommand extends commando.Command
 {
@@ -25,7 +24,6 @@ class WelcomeAllCommand extends commando.Command
         ranks = new RanksCommand(client);
         osrsranks = new OsrsranksCommand(client);
         roles = new RolesCommand(client);
-        eventroles = new EventRolesCommand(client);
         citadel = new CitadelCommand(client);
         socialmedia = new SocialMediaCommand(client);
         calendar = new CalendarCommand(client);
@@ -39,7 +37,6 @@ class WelcomeAllCommand extends commando.Command
             .then(ranks.run(message))
             .then(osrsranks.run(message))
             .then(roles.run(message))
-            .then(eventroles.run(message))
             .then(citadel.run(message))
             .then(socialmedia.run(message))
             .then(calendar.run(message));
