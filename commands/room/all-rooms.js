@@ -11,7 +11,7 @@ const CharCommsCommand = require('./Charcomms.js');
 const ClockCommsCommand = require('./clockcomms.js');
 const DdCommsCommand = require('./ddcomms.js');
 const BossingCommsCommand = require('./bossingcomms.js');
-const MiscRoomCommand = require('./misccomms.js');
+const MiscCommsCommand = require('./misccomms.js');
 const FriendlyCommand = require('./friendly.js');
 
 var discrooms, genrooms, rsrooms, osrsrooms, gaming, miscrooms, voicerooms, runeinfo, charcomms, clockcomms, ddcomms, bossingcomms, misccomms, friendly;
@@ -39,7 +39,7 @@ class AllRoomsCommand extends commando.Command
         clockcomms = new ClockCommsCommand(client);
         ddcomms = new DdCommsCommand(client);
         bossingcomms = new BossingCommsCommand(client);
-        misccomms = new MiscRoomCommand(client);
+        misccomms = new MiscCommsCommand(client);
         friendly = new FriendlyCommand(client);
     }
 
