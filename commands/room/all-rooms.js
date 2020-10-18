@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando');
-const DiscRoomCommand = require('./discrooms.js');
+const DiscRoomCommand = require('./discroom.js');
 const GenRoomCommand = require('./genrooms.js');
 const RsRoomCommand = require('./rsrooms.js');
 const OsrsRoomCommand = require('./osrsrooms.js');
@@ -14,7 +14,7 @@ const BossingCommsCommand = require('./bossingcomms.js');
 const MiscCommsCommand = require('./misccomms.js');
 const FriendlyCommand = require('./friendly.js');
 
-var discrooms, genrooms, rsrooms, osrsrooms, gaming, miscrooms, voicerooms, runeinfo, charcomms, clockcomms, ddcomms, bossingcomms, misccomms, friendly;
+var discroom, genrooms, rsrooms, osrsrooms, gaming, miscrooms, voicerooms, runeinfo, charcomms, clockcomms, ddcomms, bossingcomms, misccomms, friendly;
 
 class AllRoomsCommand extends commando.Command
 {
@@ -27,7 +27,7 @@ class AllRoomsCommand extends commando.Command
             description: 'Does all room info messages'
         });
 
-        discrooms = new DiscRoomCommand(client);
+        discroom = new DiscRoomCommand(client);
         genrooms = new GenRoomCommand(client);
         rsrooms = new RsRoomCommand(client);
         osrsrooms = new OsrsRoomCommand(client);
