@@ -46,7 +46,7 @@ class AllRoomsCommand extends commando.Command
     async run(message, args)
     {
         message.delete();
-        discrooms.run(message)
+        discroom.run(message)
             .then(genrooms.run(message))
             .then(rsrooms.run(message))
             .then(osrsrooms.run(message))
