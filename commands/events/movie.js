@@ -3,7 +3,7 @@ const discord = require('discord.js');
 
 async function react(movieEmojis, message) {
   for (const emoji of movieEmojis) {
-	var emoji_new = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
+	var emoji_new = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emoji.toString()) || emoji;
 	try{
 		await message.react(emoji_new);
 	}catch(error){
