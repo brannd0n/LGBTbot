@@ -1,6 +1,19 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
+async function react(movieEmojis, message) {
+  const files = await getFilePaths()
+
+  for (const emoji of movieEmojis) {
+	var emoji_new = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
+	try{
+		await message.react(emoji_new);
+	}catch(error){
+		console.error('One of the emojis failed to react.');
+	}
+  }
+}
+
 class MovieCommand extends commando.Command
 {
     constructor(client)
@@ -57,10 +70,7 @@ class MovieCommand extends commando.Command
         .addField("\u200b", args.description)
         .addField("\u200b", movieChoices);
         message.channel.sendEmbed(myInfo).then((message) => {
-            movieEmojis.for((emojiName) => {
-                var emoji = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
-                await message.react(emoji);
-            });
+            react(movieEmojis, message);
         });
     }
 }
