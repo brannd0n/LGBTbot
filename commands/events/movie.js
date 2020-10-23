@@ -59,7 +59,7 @@ class MovieCommand extends commando.Command
         message.channel.sendEmbed(myInfo).then((message) => {
             movieEmojis.forEach((emojiName) => {
                 var emoji = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
-                message.react(emoji);
+                await message.react(emoji);
             });
         });
     }
