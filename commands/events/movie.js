@@ -2,8 +2,6 @@ const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
 async function react(movieEmojis, message) {
-  const files = await getFilePaths()
-
   for (const emoji of movieEmojis) {
 	var emoji_new = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
 	try{
