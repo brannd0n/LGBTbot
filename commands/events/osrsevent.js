@@ -66,7 +66,7 @@ class OsrsEventCommand extends commando.Command
         .setTitle(new_args.event)
         .setColor(0x4F2095)
         .setThumbnail("https://oldschool.runescape.wiki/images/4/46/Old_School_RuneScape_Mobile_icon.png?6b7d1")
-        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + message.author +"\n**Where:** " + new_args.where)
+        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + message.author.username +"\n**Where:** " + new_args.where)
         .addField("\u200b",new_args.description, true);
         message.channel.send(myInfo)
     }
