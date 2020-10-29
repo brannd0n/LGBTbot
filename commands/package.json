@@ -1,0 +1,19 @@
+{
+  "name": "lgbt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "discord.js-commando": "^0.10.0",
+    "firebase-admin": "^9.1.1"
+  },
+  "description": "",
+  "engines": {
+    "node": "10.x"
+  }
+}
