@@ -53,7 +53,7 @@ class ClannieHardkrilCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Just hit K'ril and avoid the specials. That's all the advice you need but if you are nervous, please feel free to PM me. All loot will be traded to myself and split equally between attendees.", "https://runescape.wiki/images/2/2f/K%27ril_Tsutsaroth.png")
         .setThumbnail("https://runescape.wiki/images/2/2f/K%27ril_Tsutsaroth.png")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">"t)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">")
         .addField("\u200b", "[Hard mode strategies for K'ril Tsutsaroth](https://runescape.wiki/w/K%27ril_Tsutsaroth/Strategies/Hard_mode)")
         .addField("\u200b", "**Requirements:**\nTroll Stronghold \n70 Constutution", true)
         .addField("\u200b", "**Recommended:**\nTier 70 Armour or higher \n Overloads \n Soulsplit", true)
