@@ -53,6 +53,25 @@ bot.on('guildMemberRemove', async member => {
     if (channel) channel.send(embed);
 })
 
+bot.on('guildMemberUpdate', async (oldMember, newMember) => {
+    if (oldMember.nickname !== newMember.nickname) {
+        const embed = new Discord.MessageEmbed()
+            .setAuthor('User Added Nickname', newMember.user.displayAvatarURL())
+            .setColor('#34ebe1')
+            .addField('User', `<@!${newMember.user.id}>`)
+            .addField('Old', oldMember.nickname || 'None')
+            .addField('New', newMember.nickname)
+            .setFooter(`${new Date(Date.now()).toLocaleDateString()}`);
+
+        const snapshot = await db.collection('guilds').doc(newMember.guild.id).get();
+        const welcomeChannel = snapshot.data().welcomeChannel;
+        const channel = newMember.guild.channels.cache.get(welcomeChannel) ||
+            newMember.guild.channels.cache.find(channel => channel.name === 'general');
+
+        if (channel) channel.send(embed);
+    }
+});
+
 bot.on('guildCreate', async guild => {
     try {
         await db.collection('guilds').doc(guild.id).set({
