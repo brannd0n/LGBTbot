@@ -53,7 +53,7 @@ class ClannieMegaDuckCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! We will be voice chatting during this mass to give out calls and such. If you are nervous, please feel free to PM me.", "https://runescape.wiki/images/a/a5/Mega_Duck.png?75e79")
         .setThumbnail("https://runescape.wiki/images/a/a5/Mega_Duck.png?75e79")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">"t)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">")
         .addField("\u200b", "[Strategies for Mega Duck (wiki)](https://runescape.wiki/w/Mega_Duck)")
         .addField("\u200b", "**Recommended:**\nBread crumbs", true)
         .addField("\u200b", new_args.description, true)
