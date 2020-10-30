@@ -53,7 +53,7 @@ class ClannieZilyCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Just hit Zily and avoid her attacks. That's all the advice you need but if you are nervous, please feel free to PM me. All loot will be traded to myself and split equally between attendees.", "https://runescape.wiki/images/f/fb/Commander_Zilyana.png?4fd88")
         .setThumbnail("https://runescape.wiki/images/f/fb/Commander_Zilyana.png?4fd88")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">")
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + new_args.host)
         .addField("\u200b", "[Normal mode strategies for Commander Zilyana](https://runescape.fandom.com/wiki/Commander_Zilyana/Strategies)")
         .addField("\u200b", "**Requirements:**\nTroll Stronghold \n70 Agility", true)
         .addField("\u200b", "**Recommended:**\nTier 70 Armour or higher \n Overloads \n Soulsplit", true)
