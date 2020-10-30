@@ -53,7 +53,7 @@ class ClannieVoragoCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! We will be voice chatting during this mass to give out calls and such. If you are nervous, please feel free to PM me. All loot will be traded to myself and split equally between attendees.", "https://runescape.wiki/images/thumb/e/eb/Vorago.png/753px-Vorago.png?d1cfb")
         .setThumbnail("https://runescape.wiki/images/thumb/e/eb/Vorago.png/753px-Vorago.png?d1cfb")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">"t)
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@!"+  new_args.host.id +">")
         .addField("\u200b", "[Strategies for Vorago (wiki)](https://runescape.wiki/w/Vorago/Strategies)")
         .addField("\u200b", "**Requirements:**\nTalk to Vorago", true)
         .addField("\u200b", "**Recommended:**\nAncient Curses\nOverloads\nT80+ DPS Armour\nMagic or Ranged \nBoB filled with food.", true)
