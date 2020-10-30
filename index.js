@@ -1,4 +1,5 @@
 const fs = require('fs');
+const Discord = require('discord.js');
 const Commando = require('discord.js-commando');
 const http = require('http');
 const { nextTick } = require('process');
@@ -10,7 +11,8 @@ admin.initializeApp({ credential: admin.credential.cert(firebase) });
 const db = admin.firestore();
 
 const bot = new Commando.Client({
-    commandPrefix: './'
+    commandPrefix: './',
+    ws: { intents: new Discord.Intents(Discord.Intents.ALL) },
 });
 
 bot.registry
@@ -22,6 +24,34 @@ bot.registry
     .registerDefaults()
     .registerCommandsIn(__dirname + '/commands')
     ;
+
+bot.on('guildMemberAdd', async member => {
+    const embed = new Discord.MessageEmbed()
+        .setColor('#32CD32')
+        .setDescription(`📥 **${member.user.username}#${member.user.discriminator}** has joined the server.`)
+        .setFooter(`User Join | ${new Date(Date.now()).toLocaleDateString()}`, member.user.displayAvatarURL());
+
+    const snapshot = await db.collection('guilds').doc(member.guild.id).get();
+    const welcomeChannel = snapshot.data().welcomeChannel;
+    const channel = member.guild.channels.cache.get(welcomeChannel) || 
+        member.guild.channels.cache.find(channel => channel.name === 'general');
+
+    if (channel) channel.send(embed);
+});
+
+bot.on('guildMemberRemove', async member => {
+    const embed = new Discord.MessageEmbed()
+        .setColor('#FF0000')
+        .setDescription(`📤 **${member.user.username}#${member.user.discriminator}** has left the server.`)
+        .setFooter(`User Leave | ${new Date(Date.now()).toLocaleDateString()}`, member.user.displayAvatarURL());
+
+        const snapshot = await db.collection('guilds').doc(member.guild.id).get();
+        const welcomeChannel = snapshot.data().welcomeChannel;
+        const channel = member.guild.channels.cache.get(welcomeChannel) || 
+            member.guild.channels.cache.find(channel => channel.name === 'general');
+
+    if (channel) channel.send(embed);
+})
 
 bot.on('guildCreate', async guild => {
     try {
@@ -112,7 +142,7 @@ bot.on('messageReactionAdd', async (messageReaction, user) => {
     const emoji = emojiID ? `<:${emojiName}:${emojiID}>` : emojiName;
 
     console.log(emoji);
-    
+
     const role_id = required_message_info.find(el => el.emoji === emoji).role_id;
     const role = messageReaction.message.guild.roles.find(role => role.id === role_id);
     console.log(role_id, role);
@@ -137,7 +167,7 @@ bot.on('messageReactionRemove', async (messageReaction, user) => {
     const emoji = emojiID ? `<:${emojiName}:${emojiID}>` : emojiName;
 
     console.log(emoji);
-    
+
     const role_id = required_message_info.find(el => el.emoji === emoji).role_id;
     const role = messageReaction.message.guild.roles.find(role => role.id === role_id);
     console.log(role_id, role);
