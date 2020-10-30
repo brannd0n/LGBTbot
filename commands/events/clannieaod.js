@@ -51,7 +51,7 @@ class ClannieAodCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! If you are nervous, please feel free to PM me. All loot will be traded to myself and split equally between attendees.", "https://runescape.wiki/images/2/2b/Nex_%28Angel_of_Death%29.png?00050")
         .setThumbnail("https://runescape.wiki/images/2/2b/Nex_%28Angel_of_Death%29.png?00050")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@"+  new_args.host.id +">")
+        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host:** " + "<@"+  message.author.id +">")
         .addField("\u200b", "[Hard mode strategies for Angel of Death](https://runescape.wiki/w/Nex:_Angel_of_Death/Strategies)")
         .addField("\u200b", "**Requirements:**\nFreedom \nAtleast Tier 80 Weapons and Armour \nAntipoision ++ \nMagic or Range Style \nOverloads \nBeast of Burden \nAtleast 71 Prayer", true)
         .addField("\u200b", "**Recommended:**\nVenomblood Perk \nDouble Surge/Escape \nTier 95 Prayers \nVulnerability \nWeapon Poison++ \nManiacal/Reckless Aura \nSign of Life", true)
