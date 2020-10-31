@@ -33,8 +33,7 @@ bot.on('guildMemberAdd', async member => {
 
     const snapshot = await db.collection('guilds').doc(member.guild.id).get();
     const welcomeChannel = snapshot.data().welcomeChannel;
-    const channel = member.guild.channels.cache.get(welcomeChannel) || 
-        member.guild.channels.cache.find(channel => channel.name === 'general');
+    const channel = member.guild.channels.cache.get(welcomeChannel);
 
     if (channel) channel.send(embed);
 });
@@ -47,8 +46,7 @@ bot.on('guildMemberRemove', async member => {
 
         const snapshot = await db.collection('guilds').doc(member.guild.id).get();
         const welcomeChannel = snapshot.data().welcomeChannel;
-        const channel = member.guild.channels.cache.get(welcomeChannel) || 
-            member.guild.channels.cache.find(channel => channel.name === 'general');
+        const channel = member.guild.channels.cache.get(welcomeChannel);
 
     if (channel) channel.send(embed);
 })
@@ -65,8 +63,7 @@ bot.on('guildMemberUpdate', async (oldMember, newMember) => {
 
         const snapshot = await db.collection('guilds').doc(newMember.guild.id).get();
         const welcomeChannel = snapshot.data().welcomeChannel;
-        const channel = newMember.guild.channels.cache.get(welcomeChannel) ||
-            newMember.guild.channels.cache.find(channel => channel.name === 'general');
+        const channel = newMember.guild.channels.cache.get(welcomeChannel);
 
         if (channel) channel.send(embed);
     }
