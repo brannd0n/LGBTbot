@@ -162,7 +162,7 @@ bot.on('messageReactionAdd', async (messageReaction, user) => {
 
     const role_id = required_message_info.find(el => el.emoji === emoji).role_id;
     const role = await messageReaction.message.guild.roles.fetch(role_id);
-    console.log(role_id, role);
+    console.log(role_id, role,user);
     if (role) {
         const member = messageReaction.message.guild.members.fetch(user.id);
         if (member) {
