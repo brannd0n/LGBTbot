@@ -152,7 +152,7 @@ bot.on('messageReactionAdd', async (messageReaction, user) => {
     const snapshot = await db.collection('guilds').doc(guild_id).get();
     const messages = snapshot.data().messages;
     const required_message_info = messages[message_id];
-
+    console.log(snapshot)
     const emojiName = messageReaction.emoji.name;
     const emojiID = messageReaction.emoji.id;
     const emoji = emojiID ? `<:${emojiName}:${emojiID}>` : emojiName;
