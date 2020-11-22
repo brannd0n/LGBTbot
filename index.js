@@ -166,7 +166,7 @@ bot.on('messageReactionAdd', async (messageReaction, user) => {
     if (role) {
         const member = messageReaction.message.guild.members.fetch(user.id);
         console.log("GUILD MEMBER",member.roles)
-        if (member && member.roles) {
+        if (member) {
             member.roles.add(role.id);
             console.log('success');
         }
