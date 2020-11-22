@@ -127,6 +127,7 @@ bot.on('raw', async event => {
         });
         if (message_id_array.includes(event.d.message_id)) {
             const reactionChannel = await bot.channels.fetch(event.d.channel_id);
+            console.log(reactionChannel,"REACTION CHANNEL")
             if (reactionChannel.messages.has(event.d.message_id)) {
                 return;
             }
