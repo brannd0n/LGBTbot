@@ -166,7 +166,7 @@ bot.on('messageReactionAdd', async (messageReaction, user) => {
     if (role) {
         const member = await messageReaction.message.guild.members.fetch(user.id);
 //         const member = bot.guilds.cache
-        console.log("GUILD MEMBER",member.roles,typeof member.first())
+        console.log("GUILD MEMBER",member.roles)
         if (member) {
             member.roles.add(role.id);
             console.log('success');
