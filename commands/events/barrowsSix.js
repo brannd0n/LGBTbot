@@ -44,7 +44,7 @@ class BarrowsSixCommand extends commando.Command
           
   
         message.delete();
-        var myInfo = new discord.RichEmbed()
+        var myInfo = new discord.MessageEmbed()
         .setTitle("⚔️ __**Barrows Rise of The Six Event**__ ⚔️")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://runescape.wiki/images/2/23/Ahrim_the_Blighted_%28Shadow%29.png?7d4ce")
@@ -55,7 +55,7 @@ class BarrowsSixCommand extends commando.Command
         .addField("\u200b", "**Recommended:**\nTier 90+ Ranged weapon \nTier 95 prayers \nTier 90 power armour \nEnhanced Excalibur \nAdrenaline/Replenishment potions \nDouble Surge, Bladed Dive, Scrimsham of Cruelty/Elements, Reaper necklace", true)
         .addBlankField()
         .addField("\u200b", new_args.description, true)
-        message.channel.sendEmbed(myInfo);
+        message.channel.send(myInfo);
     }
 }
 
