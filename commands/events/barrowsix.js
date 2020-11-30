@@ -51,6 +51,7 @@ class BarrowSixCommand extends commando.Command
         .addField("\u200b", "[Strategies for Barrows Rise of The Six (wiki)](https://runescape.wiki/w/Barrows:_Rise_of_the_Six/Strategies)")
         .addField("\u200b", "**Requirements:**\n95+ Combat stats \nTier 80+ power armour \nTier 90+ two handed weapon \nYak with food \nOverloads", true)
         .addField("\u200b", "**Recommended:**\nTier 90+ Ranged weapon \nTier 95 prayers \nTier 90 power armour \nEnhanced Excalibur \nAdrenaline/Replenishment potions \nDouble Surge, Bladed Dive, Scrimsham of Cruelty/Elements, Reaper necklace ", true)
+        .addField('\u200b', '\u200b')
         .addField("\u200b", new_args.description, true);
         message.channel.send(myInfo)
     }
