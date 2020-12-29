@@ -21,7 +21,7 @@ class DivRolesCommand extends commando.Command
         ":purple_heart: - <@&630739941579816967>\n" +
         ":green_heart: - <@&630740361337372692>\n" +
         ":yellow_heart: - <@&630740555143315463>\n" +
-        "You may also assign yourselves roles to display if you play RS3 or OSRS.\n" +
+        "You may also assign yourselves roles to display if you play RS3 or OSRS.\n\n" +
         ":crossed_swords: - <@&630765616697049088>\n" +
         ":bow_and_arrow: - <@&630765530030014476>\n")
         .setColor(0x00FFFF)
