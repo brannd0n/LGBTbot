@@ -20,7 +20,7 @@ class DivRolesCommand extends commando.Command
         "To assign yourself pronouns please react to this post with any of the corresponding emojis.\n\n" +
         ":purple_heart: - <@&630739941579816967>\n" +
         ":green_heart: - <@&630740361337372692>\n" +
-        ":yellow_heart: - <@&630740555143315463>\n" +
+        ":yellow_heart: - <@&630740555143315463>\n\n" +
         "You may also assign yourselves roles to display if you play RS3 or OSRS.\n\n" +
         ":crossed_swords: - <@&630765616697049088>\n" +
         ":bow_and_arrow: - <@&630765530030014476>\n")
