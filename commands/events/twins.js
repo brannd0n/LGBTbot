@@ -29,10 +29,18 @@ class TwinsCommand extends commando.Command
               ]
           });
       }
-    async run(message, args)
-    {
-        message.delete();
-        var myInfo = new discord.MessageEmbed()
+      async run(message, args)
+      {
+          const arg_string = Object.values(args).map(val => val);
+          const updated_args = arg_string.join(' ').split(']').join(' ').split('[').slice(1);
+          const filtered = updated_args.filter(el => el && el != '');
+          const new_args = {
+              date: filtered[0] || '',
+              time:  filtered[1] || '',
+              description: filtered[2] || '\u200B',
+          };
+          message.delete();
+          var myInfo = new discord.MessageEmbed()
         .setTitle("⚔️ __**TWIN FURIES MASS**__ ⚔️")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Please get your kill count before the event start time, you keep your kc even though you leave GWD2! Don't get charged, and stay out of the dangerous floor tiles! That's all the advice you need but if you are nervous, please feel free to PM me. All loot will be traded to myself and split equally between attendees.", "https://runescape.wiki/images/7/72/Nymora_chathead.png?e37c4")
