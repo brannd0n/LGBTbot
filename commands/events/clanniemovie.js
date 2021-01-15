@@ -60,8 +60,7 @@ class ClannieMovieCommand extends commando.Command
         .setThumbnail("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/155/clapper-board_1f3ac.png")
         .addField("\u200b","**Date:** " + args.date + "\n**Time:** " + args.time + "\n**Host: **" + args.host)
         .addField("\u200b", args.description)
-        .addField("\u200b", movieChoices)
-        .addField("\u200b", "Here is the link so you can make an account now ahead of time:\nhttps://www.rabb.it/s/ol54mw");
+        .addField("\u200b", movieChoices);
         message.channel.send({ embed: myInfo}).then((message) => {
             movieEmojis.forEach((emojiName) => {
                 var emoji = message.client.emojis.find(clientEmoji => clientEmoji.toString() === emojiName.toString()) || emojiName;
