@@ -43,7 +43,7 @@ class OsrssoulwarsCommand extends commando.Command
         };
         message.delete();
         var myInfo = new discord.MessageEmbed()
-        .setTitle("<:skills:458333529651281921> __**Soul Wars**__ <:skills:458333529651281921>")
+        .setTitle(":crossed_swords:  __**Soul Wars**__ :crossed_swords:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/thumb/d/d7/Soul_Wars_logo.png/2560px-Soul_Wars_logo.png?5fada")
         .setThumbnail("https://oldschool.runescape.wiki/images/thumb/d/d7/Soul_Wars_logo.png/2560px-Soul_Wars_logo.png?5fada")
