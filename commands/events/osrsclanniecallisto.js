@@ -61,7 +61,7 @@ class OsrsClannieCallistoCommand extends commando.Command
         .setThumbnail("https://oldschool.runescape.wiki/images/d/d4/Callisto.png?4612a")
         .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + new_args.host)
         .addField("\u200b", "[Strategies for Callisto](https://oldschool.runescape.wiki/w/Callisto/Strategies)")
-        .addField("\u200b", "**Requirements:**\n70+ Mele Stats", true)
+        .addField("\u200b", "**Requirements:**\n70+ Melee Stats", true)
         .addField("\u200b", "**Recommended:**\nVeracs Set Or Range With Diamond Bolt (e) \nAnnakarl Teleport Tabs", true)
         .addField('\u200b', '\u200b')
         .addField("\u200b", new_args.description, true)
