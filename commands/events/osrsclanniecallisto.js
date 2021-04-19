@@ -69,5 +69,5 @@ class OsrsClannieCallistoCommand extends commando.Command
     }
 }
 
-module.exports = OsrsclanniecallistoCommand;
+module.exports = OsrsClannieCallistoCommand;
 
