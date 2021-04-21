@@ -68,7 +68,7 @@ class MovieCommand extends commando.Command
         .addField("\u200b", args.description)
         .addField("\u200b", movieChoices);
         message.channel.send({ embed: myInfo}).then((message) => {
-            message.react(movieEmojis, message);
+            react(movieEmojis, message);
         });
     }
 }
