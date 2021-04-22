@@ -1,5 +1,7 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
+
 
 class OsrsbarrowsCommand extends commando.Command
 {
@@ -41,6 +43,14 @@ class OsrsbarrowsCommand extends commando.Command
             time:  filtered[1] || '',
             description:  filtered[2] || '',
         };
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
         
         message.delete();
         var myInfo = new discord.MessageEmbed()
@@ -48,7 +58,7 @@ class OsrsbarrowsCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/8/8c/Barrows_logo.jpg?97142")
         .setThumbnail("https://oldschool.runescape.wiki/images/8/8c/Barrows_logo.jpg?97142")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + "\n🌍 **World:** 523\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b", `📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", "[Strategies for Barrows](https://oldschool.runescape.wiki/w/Barrows/Strategies)")
         .addField("\u200b", "**Requirements:**\nCompletion of Quest Priest in Peril is required to enter Morytania. \nPartial completion of Quests Nature Spirit is required to enter Morytania swamp, and thus to visit the Barrows. (Not necessary if using barrows teleport tablets.) ", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions", true)
