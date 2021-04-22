@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class OsrsClannieCommand extends commando.Command
 {
@@ -65,12 +66,21 @@ class OsrsClannieCommand extends commando.Command
             where: filtered[5] || '',
             description: filtered[6] || '\u200B',
         };
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle(new_args.event)
         .setColor(0x4F2095)
         .setThumbnail("https://oldschool.runescape.wiki/images/4/46/Old_School_RuneScape_Mobile_icon.png?6b7d1")
-        .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**World:** " + new_args.world + "\n**Host: **" + new_args.host + "\n**Where:** " + new_args.where)
+        .addField("\u200b",`📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** ${new_args.world}\n**Host: ** ${new_args.host}\n**Where:** ${new_args.where}`)
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
