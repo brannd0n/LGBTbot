@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class OsrsfishtrawlerCommand extends commando.Command
 {
@@ -22,11 +23,6 @@ class OsrsfishtrawlerCommand extends commando.Command
                     type: 'string'
                   },
                   {
-                      key: 'world',
-                      prompt: 'What world is it on?',
-                      type: 'string'
-                  },
-                  {
                       key: 'description',
                       prompt: 'Describe the event',
                       type: 'string'
@@ -44,16 +40,25 @@ class OsrsfishtrawlerCommand extends commando.Command
         const new_args = {
             date: filtered[0] || '',
             time:  filtered[1] || '',
-            world:  filtered[2] || '',
-            description: filtered[3] || '\u200B',
+            description: filtered[2] || '\u200B',
         };
+        
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle(":fishing_pole_and_fish: __**Fishing Trawler Event**__ :fishing_pole_and_fish:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/8/86/Angler%27s_outfit_equipped.png?cef02")
         .setThumbnail("https://oldschool.runescape.wiki/images/8/86/Angler%27s_outfit_equipped.png?cef02")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** " + new_args.world + "\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b", `📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", "[Fishing Trawler Strategy](https://oldschool.runescape.wiki/w/Fishing_Trawler#Playing_the_game)")
         .addField("\u200b", "**Requirements:**\nLevel 15 Fishing to catch fish.", true)
         .addField("\u200b", "**Recommended:**\n300 swamp paste \nRope \nAtleast one bailing bucket", true)
