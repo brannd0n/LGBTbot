@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class OsrssoulwarsCommand extends commando.Command
 {
@@ -41,13 +42,23 @@ class OsrssoulwarsCommand extends commando.Command
             time:  filtered[1] || '',
             description: filtered[2] || '\u200B',
         };
+       
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle(":crossed_swords:  __**Soul Wars**__ :crossed_swords:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/thumb/d/d7/Soul_Wars_logo.png/2560px-Soul_Wars_logo.png?5fada")
         .setThumbnail("https://oldschool.runescape.wiki/images/thumb/d/d7/Soul_Wars_logo.png/2560px-Soul_Wars_logo.png?5fada")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 523\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b", `📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
