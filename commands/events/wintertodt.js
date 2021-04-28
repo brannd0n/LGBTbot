@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class WintertodtCommand extends commando.Command
 {
@@ -42,13 +43,22 @@ class WintertodtCommand extends commando.Command
             description:  filtered[2] || '',
         };
         
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle(":fire: __**Wintertodt Event**__ :fire:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun!", "https://oldschool.runescape.wiki/images/7/78/Burning_brazier_%28Wintertodt%29.png?7b131")
         .setThumbnail("https://oldschool.runescape.wiki/images/7/78/Burning_brazier_%28Wintertodt%29.png?7b131")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + "\n🌍 **World:** 523\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b", `📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", "[Strategies for Wintertodt](https://oldschool.runescape.wiki/w/Wintertodt/Strategies)")
         .addField("\u200b", "**Requirements:**\nAxe \nLevel 50 Firemaking \nWarm Clothing [List of Warm Cloting](https://oldschool.runescape.wiki/w/Wintertodt/Warm_clothing)", true)
         .addField("\u200b", "**Recommended:**\nFood", true)
