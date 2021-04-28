@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class OsrskqCommand extends commando.Command
 {
@@ -41,13 +42,22 @@ class OsrskqCommand extends commando.Command
             time:  filtered[1] || '',
             description: filtered[2] || '\u200B',
         };
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle(":crossed_swords: __**Kalphite Queen Mass**__ :crossed_swords:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Any unique drops will be split after the event.", "https://oldschool.runescape.wiki/images/5/57/Kalphite_Queen.png?a4955")
         .setThumbnail("https://oldschool.runescape.wiki/images/5/57/Kalphite_Queen.png?a4955")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 523\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b", `📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", "[Strategies for Kalphite Queen](https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies)")
         .addField("\u200b", "**Requirements:**\n 80+ Combat stats ", true)
         .addField("\u200b", "**Recommended:**\nFood \nPrayer Potions \nMelee or Range gear", true)
