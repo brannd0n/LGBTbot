@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class OsrspestCommand extends commando.Command
 {
@@ -47,13 +48,23 @@ class OsrspestCommand extends commando.Command
             world:  filtered[2] || '',
             description: filtered[3] || '\u200B',
         };
+        
+        const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         message.delete();
         var myInfo = new discord.MessageEmbed()
         .setTitle("__**Pest Control Event**__")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! Any unique drops will be split after the event.", "https://oldschool.runescape.wiki/images/a/aa/Void_Knight.png?61ae6")
         .setThumbnail("https://oldschool.runescape.wiki/images/a/aa/Void_Knight.png?61ae6")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** " + new_args.world + "\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b",`📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** ${new_args.world}\n**Host: ** <@!${message.author.id}>`)        
         .addField("\u200b", "[Strategies for Pest Control](https://oldschool.runescape.wiki/w/Pest_Control/Strategies)")
         .addField("\u200b", "**Requirements:**\n**Novice** 40+ Combat \n**Intermediate** 70+ Combat \n**Veteran** 100+ Combat ", true)
         .addField("\u200b", "**Recommended:**\nMultiple attack styles for portals", true)
