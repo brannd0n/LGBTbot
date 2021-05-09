@@ -49,8 +49,8 @@ class RexCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/f/f0/Pthentraken.png?8b219")
         .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host: **" + "<@!"+ message.author.id +">")
         .addField("\u200b", "[Strategies for Rex Matriarchs](https://runescape.wiki/w/Rex_Matriarchs/Strategies)")
-        .addField("\u200b", "**Requirements:**\nAccess to Anachronia \nHybrid armour \nMelee, Magic and Ranged weapon switches", true)
-        .addField("\u200b", "**Recommended:**\nInsulated boots \nVenomblood perk \nEntangle", true)
+        .addField("\u200b", "**Requirements:**\nAccess to Anachronia \nHybrid armour \nMelee, Magic and Ranged weapon switches")
+        .addField("\u200b", "**Recommended:**\nInsulated boots \nVenomblood perk \nEntangle")
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
