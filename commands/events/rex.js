@@ -6,9 +6,9 @@ class RexCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'ed1',
+            name: 'rex',
             group: 'events',
-            memberName: 'ed1',
+            memberName: 'rex',
             description: 'Elite dungeon event details',
             args: [
                 {
