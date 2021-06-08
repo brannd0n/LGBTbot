@@ -50,6 +50,7 @@ class CoopslayerCommand extends commando.Command
         .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host: **" + "<@!"+ message.author.id +">")
         .addField("\u200b", "**Requirements:**\nSlayer gem and/or slayer helm \nNo active slayer task", true)
         .addField("\u200b", "**Recommended:**\nTeleports to slayer masters/creatures \nViP tickets", true)
+        .addField('\u200b', '\u200b')
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
