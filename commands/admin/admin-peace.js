@@ -28,7 +28,7 @@ class AdminPeaceCommand extends commando.Command
         " • <@&322411481113165853> that you wish to set a pin due to a troll attack.\n\n"+
         " • @everyone in <#308711801166626816> that the pin is active and clearly state what the current pin is.\n\n" +
         " • Provide evidence in <#618186687775899654> showing why the pin was activated.\n\n")
-	 	.addField("\u200b"," • Provide evidence in <#261530348310102019> showing why the pin was activated.\n\n" +
+	.addField("\u200b",
         "Be prepared to request back-up from <#618186687775899654> if you ever feel overwhelmed in any situation.\n\n" +
         "To help you communicate with each other better you will be assigned specific roles in the discord to show which team you are a part of, you will all be able to tag each other with either <@&601390315894603816> or <@&601391497698344960> , you will also have access to not only the general <#618186687775899654> channel but <#605633402988789761> and <#605633793167982595> channels, these specific channels are to help you stay more organised and are not for chit chat.")
         .setThumbnail("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/138/peace-symbol_262e.png")
