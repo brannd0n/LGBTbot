@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class FullRaidCommand extends commando.Command
+class FullraidCommand extends commando.Command
 {
     constructor(client)
     {
@@ -56,4 +56,4 @@ async run(message, args)
     }
 }
 
-module.exports = FullRaidCommand;
+module.exports = FullraidCommand;
