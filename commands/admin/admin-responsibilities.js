@@ -27,7 +27,7 @@ class AdminResponsibilitiesCommand extends commando.Command
                 "• Updating the clan notice board for the events being hosted along with the clan welcome message when joining the CC.\n\n" +
         "👨‍👩‍👧‍👦 **Community Management** 👨‍👩‍👧‍👦 \n\n" +
           "Community management Head admins:<@699036323058679828>\n\n" +
-          "• Forum bumping.\n\n" 
+          "• Forum bumping.\n\n" +
           "• Promotions in RS3 Clan\n\n" +
           "• Recruitment (in game and on forums)\n\n" +
           "• Inviting new members to the discord\n\n" +
