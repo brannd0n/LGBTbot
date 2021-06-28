@@ -1,14 +1,14 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class Lgbtroles2Command extends commando.Command
+class PronounsCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'lgbtroles2',
+            name: 'pronouns',
             group: 'welcome',
-            memberName: 'lgbtroles2',
+            memberName: 'pronouns',
             description: 'Discord roles.'
         });
     }
@@ -24,4 +24,4 @@ class Lgbtroles2Command extends commando.Command
     }
 }
 
-module.exports = Lgbtroles2Command;
+module.exports = PronounsCommand;
