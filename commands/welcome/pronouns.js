@@ -16,7 +16,7 @@ class PronounsCommand extends commando.Command
     async run(message, args)
     {
         var myInfo = new discord.MessageEmbed()
-        .setColor(0x22FF00)
+        .setColor(0x00FFFF)
         .setFooter("Last updated")
         .setTimestamp()
         .addField("**Pronouns:**", "He/Him/His - 🟡 \n \nShe/Her/Hers - 🟨 \n \nThey/Them/Their - 🟢 \n \nFae/Faer - 🟩 \n \nZe/Hir - ⚪ \n \nXey/Xem/Xyr - ⬜ \n \nIt/Its/Itself - 🟠 \n \nXe/Xem - 🟧 \n \nE/Em - 🧡")
