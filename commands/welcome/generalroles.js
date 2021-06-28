@@ -16,7 +16,7 @@ class GeneralrolesCommand extends commando.Command
     async run(message, args)
     {
         var myInfo = new discord.MessageEmbed()
-        .setColor(0x22FF00)
+        .setColor(0x9200FF)
         .setFooter("Last updated")
         .setTimestamp()
         .addField("**General Roles:**", "RS3 Events - ❤️ \n \nOSRS Events - 💚 \n \nRS3 Iron - 💙 \n \nOSRS Iron - 💜\n \nRS3 - 🟩 \n \nOSRS - 🟧")
