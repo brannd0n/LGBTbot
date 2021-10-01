@@ -49,6 +49,8 @@ class CroesusCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/8/8e/Croesus.png?b260c")
         .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 23\n**Host: **" + "<@!"+ message.author.id +">")
         .addField("\u200b", "[Strategies for Croesus](https://runescape.wiki/w/Croesus/Strategies)")
+        .addField("\u200b", "**Requirements:**\nProtean logs, Orthen Furnace Core or the new woodcutting off-hand \n5 Super restores \nMinimum 15 empty inventory spaces \nA pickaxe, Net and Hatchet (toolbelt is fine, augmented is ideal)", true)
+        .addField("\u200b", "**Recommended:**\n- Level 80+ in Fishing, Hunter, Woodcutting & Mining \nElite skilling outfit for your chosen starting plot \nAugmented tools with honed perk \n      - Pickaxe\n     - Hatchet \n        - Rod-O-Matic / Enhanced Rod-O-Matic \nMagic Butterfly Net \nBladed Dive \nDouble surge \nFreedom \nArtificer's Measure \nRunes for Crystal Mask spell \nUpgraded Pontifex shadow Ring \nGrace of the Elves \nWaterfiend familiar \nStat boosting potions \nSkilling Auras \nGatherer's cape", true)
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
