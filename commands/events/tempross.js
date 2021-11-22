@@ -41,6 +41,15 @@ class TemprossCommand extends commando.Command
             description:  filtered[2] || '',
 
         };
+         const { 
+            time_in_UTC,
+            time_in_EDT,
+            time_in_PDT,
+            time_in_BST,
+            time_in_CEST,
+            time_in_ACST 
+        } = Timezones.get(new_args);
+
         
         message.delete();
         var myInfo = new discord.MessageEmbed()
@@ -48,7 +57,7 @@ class TemprossCommand extends commando.Command
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! If you are nervous, please feel free to PM me.", "https://oldschool.runescape.wiki/images/Tempoross.png?12042")
         .setThumbnail("https://oldschool.runescape.wiki/images/Tempoross.png?12042")
-        .addField("\u200b","📅 **Date:** " + new_args.date + "\n🕘 **Time:** " + new_args.time + " game-time\n🌍 **World:** 523" + "\n**Host: **" + "<@!"+ message.author.id +">")
+        .addField("\u200b",`📅 **Date:** ${new_args.date}\n🕘 **Time:**\n${time_in_UTC}\n${time_in_EDT}\n${time_in_PDT}\n${time_in_BST}\n${time_in_CEST}\n${time_in_ACST}\n🌍 **World:** 523\n**Host: ** <@!${message.author.id}>`)
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
