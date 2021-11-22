@@ -1,5 +1,6 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
+const Timezones = require('../../utils/Timezones');
 
 class TemprossCommand extends commando.Command
 {
