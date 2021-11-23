@@ -25,6 +25,11 @@ class ClannieVinnyCommand extends commando.Command
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
+                },
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
                 }
             ]
         });
@@ -39,6 +44,7 @@ class ClannieVinnyCommand extends commando.Command
             date: filtered[0] || '',
             time:  filtered[1] || '',
             host:  filtered[2] || '',
+            description: filtered[3] || '',
         };
         message.delete();
         var myInfo = new discord.MessageEmbed()
@@ -50,6 +56,7 @@ class ClannieVinnyCommand extends commando.Command
         .addField("\u200b", "[Strategies for Vindicta (wiki)](https://runescape.wiki/w/Vindicta/Strategies)")
         .addField("\u200b", "**Requirements:**\n80 Attack\n40 Zaros kill count", true)
         .addField("\u200b", "**Recommended:**\n70+ Prayer (for piety)\n90+ Herb for extremes\nAnything above barrows armour\nAny style works \nHeart tele tabs \nBoB filled with food.", true)
+        .addField("\u200b", new_args.description, true);
         message.channel.send(myInfo)
     }
 }
