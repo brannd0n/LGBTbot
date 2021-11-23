@@ -2,16 +2,16 @@ const commando = require('discord.js-commando');
 const discord = require('discord.js');
 const Timezones = require('../../utils/Timezones');
 
-class TemprossCommand extends commando.Command
+class TemporossCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'tempross',
+            name: 'tempoross',
             group: 'events',
-            memberName: 'tempross',
-            description: 'Tempross event details',
-            examples: ['./tempross "date" "time" "description"'],
+            memberName: 'tempoross',
+            description: 'Tempoross event details',
+            examples: ['./tempoross "date" "time" "description"'],
             args: [
                 {
                     key: 'date',
@@ -54,7 +54,7 @@ class TemprossCommand extends commando.Command
         
         message.delete();
         var myInfo = new discord.MessageEmbed()
-        .setTitle(":fish: __**Tempross**__ :fish:")
+        .setTitle(":fish: __**Tempoross**__ :fish:")
         .setColor(0x00AE86)
         .setFooter("Please remember that this is completely for fun! If you are nervous, please feel free to PM me.", "https://oldschool.runescape.wiki/images/Tempoross.png?12042")
         .setThumbnail("https://oldschool.runescape.wiki/images/Tempoross.png?12042")
@@ -64,4 +64,4 @@ class TemprossCommand extends commando.Command
     }
 }
 
-module.exports = TemprossCommand;
+module.exports = TemporossCommand;
