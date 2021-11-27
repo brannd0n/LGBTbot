@@ -25,11 +25,15 @@ class ClannieGregCommand extends commando.Command
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
+                },
+                {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
                 }
             ]
         });
     }
-
     async run(message, args)
     {
         const arg_string = Object.values(args).map(val => val);
@@ -39,6 +43,7 @@ class ClannieGregCommand extends commando.Command
             date: filtered[0] || '',
             time:  filtered[1] || '',
             host:  filtered[2] || '',
+            description:  filtered[3] || '',
         };
         
         message.delete();
@@ -51,6 +56,8 @@ class ClannieGregCommand extends commando.Command
         .addField("\u200b", "[Strategies for Gregorovic](https://runescape.wiki/w/Gregorovic/Strategies)\n\nProtect range, and try not to step on the shadowed spots on the ground")
         .addField("\u200b", "**Requirements:**\n80 prayer\n40 Sliske killcount", true)
         .addField("\u200b", "**Recommended:**\nAntipoison, Venomblood perk, or Irit incense\nFood\nPrayer potions", true)
+        .addField('\u200b', '\u200b')
+        .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo)
     }
 }
