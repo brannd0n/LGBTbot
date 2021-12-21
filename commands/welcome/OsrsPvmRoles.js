@@ -6,9 +6,9 @@ class OsrspvmrolesCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'rs3pvmroles',
+            name: 'osrspvmroles',
             group: 'welcome',
-            memberName: 'rs3pvmroles',
+            memberName: 'osrspvmroles',
             description: 'Discord roles.'
         });
     }
