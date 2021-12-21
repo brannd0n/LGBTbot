@@ -22,7 +22,7 @@ module.exports = {
 
         const utc_date = Date.UTC(year, month, date, hours, mins);
         const UTC = new Date(utc_date);
-        const EDT = new Date(utc_date - 4 * 3600000);
+        const EDT = new Date(utc_date - 5 * 3600000);
         const PDT = new Date(utc_date - 7 * 3600000);
         const BST = new Date(utc_date + 1 * 3600000);
         const CEST = new Date(utc_date + 2 * 3600000);
