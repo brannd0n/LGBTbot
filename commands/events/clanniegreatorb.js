@@ -26,10 +26,15 @@ class ClannieGreatorbCommand extends commando.Command
                     key: 'host',
                     prompt: 'Who is the host?',
                     type: 'string'
-                }
-            ]
-        });
-    }
+                 },
+                 {
+                    key: 'description',
+                    prompt: 'Describe the event',
+                    type: 'string'
+                      }
+                  ]
+              });
+          }
 
     async run(message, args)
     {
@@ -40,6 +45,7 @@ class ClannieGreatorbCommand extends commando.Command
             date: filtered[0] || '',
             time:  filtered[1] || '',
             host:  filtered[2] || '',
+            description:  filtered[3] || '',
         };
         message.delete();
         var myInfo = new discord.MessageEmbed()
@@ -49,6 +55,7 @@ class ClannieGreatorbCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/thumb/9/9b/Master_runecrafter_hat_detail.png/261px-Master_runecrafter_hat_detail.png")
         .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**World:** W23")
         .addField("\u200b", "**Requirements:** \n50 Runecrafting  ", true)
+        .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo);
     }
 }
