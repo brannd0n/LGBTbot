@@ -55,6 +55,7 @@ class ClannieGreatorbCommand extends commando.Command
         .setThumbnail("https://runescape.wiki/images/thumb/9/9b/Master_runecrafter_hat_detail.png/261px-Master_runecrafter_hat_detail.png")
         .addField("\u200b","**Date:** " + new_args.date + "\n**Time:** " + new_args.time + "\n**Host: **" + new_args.host +"\n**World:** W23")
         .addField("\u200b", "**Requirements:** \n50 Runecrafting  ", true)
+        .addField('\u200b', '\u200b')
         .addField("\u200b", new_args.description, true)
         message.channel.send(myInfo);
     }
