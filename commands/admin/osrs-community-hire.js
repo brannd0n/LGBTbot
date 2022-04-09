@@ -16,7 +16,7 @@ class OsrsCommunityHiringCommand extends commando.Command
     async run(message, args)
     {
         var myInfo = new discord.MessageEmbed()
-        .setColor(0x00FDFF)
+        .setColor(0xB967FF)
         .addField("__**Status:**__", ":pencil: We are currently recruiting for the OSRS Community Management Team :pencil:")
         .setFooter("Last updated")
         .setTimestamp();
